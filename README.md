@@ -1,28 +1,58 @@
 # LeetCode-2020
 马上进入2020找实习冲刺阶段，我决定以天为单位，记录每天做的LeetCode习题，方便后期整理。
 
-初期决定规划为以下几个部分：
+
+
+## 初期决定规划为以下3部分：
+
 - LeetCode刷题记录
+
+- 各难度典型题目汇总
+
 - 题目分门别类，具体参考下图：
-  ![https://github.com/wonanut/leetcode/blob/master/assets/leetcode-zhihu.jpg]()
-  算法类：
+  ![](./imgs/leetcode-map.jpg)
+  
+  **算法类**：
+  
   - 基础技巧：分治、二分、贪心
+  
   - 排序算法：快速排序、归并排序、计数排序
+  
   - 搜索算法：回溯、递归、深度优先遍历，广度优先遍历，二叉搜索树等
+  
   - 图论：最短路径、最小生成树
+  
   - 动态规划：背包问题、最长子序列
-  数据结构类：
+  
+    
+  
+  **数据结构类**：
+  
   - 数组与链表：单 / 双向链表
+  
   - 栈与队列
+  
   - 哈希表
+  
   - 堆：最大堆 ／ 最小堆
+  
   - 树与图：最近公共祖先、并查集
+  
   - 字符串：前缀树（字典树） ／ 后缀树
   
-  ## Top题目进度
-   Top 100 Linked Questions [0%]
-   Top Interview Questions [0%]
-   
-  ## 优秀LeetCode题解传送门：https://github.com/wonanut/leetcode
-  
-  ## 目录
+    
+
+## Top题目进度
+
+- Top 100 Linked Questions [0%]
+- Top Interview Questions [0%]
+
+
+
+#### 优秀LeetCode题解传送门：https://github.com/wonanut/leetcode
+
+
+
+## 目录
+
+<empty>
