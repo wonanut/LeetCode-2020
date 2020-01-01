@@ -10,14 +10,14 @@ Howard Wonanut 2020刷题
 
 ### week1 12/31 🕑
 
-- [71 simplify-path](./week1/71 simplify-path.py) `栈` `中等` ⭐⭐  😃
-- [173 binary-search-tree-iterator](./week1/173 binary-search-tree-iterator.py) `栈` `中等` ⭐⭐  😃
-- [331 verify-preorder-serialization-of-a-binary-tree](./week1/331 verify-preorder-serialization-of-a-binary-tree.py) `栈` `中等` ⭐⭐⭐  😃
-- [682 baseball-game](./week1/682 baseball-game.py) `栈` `简单`  ⭐  😃
-- [543 diameter-of-binary-tree](week1/543 diameter-of-binary-tree.py) `二叉树` `递归` `简单`  ⭐  😃
+- [71 simplify-path](./week1/71-simplify-path.py) `栈` `中等` ⭐⭐  😃
+- [173 binary-search-tree-iterator](./week1/173-binary-search-tree-iterator.py) `栈` `中等` ⭐⭐  😃
+- [331 verify-preorder-serialization-of-a-binary-tree](./week1/331-verify-preorder-serialization-of-a-binary-tree.py) `栈` `中等` ⭐⭐⭐  😃
+- [682 baseball-game](./week1/682-baseball-game.py) `栈` `简单`  ⭐  😃
+- [543 diameter-of-binary-tree](week1/543-diameter-of-binary-tree.py) `二叉树` `递归` `简单`  ⭐  😃
 
 
 
 ### week1 1/1 🆕
 
-- [926 flip-string-to-monotone-increasing]() `数组` `中等`  ⭐⭐⭐  🤢  🆘
+- [926 flip-string-to-monotone-increasing](./week1/926-flip-string-to-monotone-increasing.py) `数组` `中等`  ⭐⭐⭐⭐  🤢 
