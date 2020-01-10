@@ -6,6 +6,12 @@ Howard Wonanut 2020刷题
 
 
 
+### week2 1/10 🆕 
+
+- [334 increasing-triplet-subsequences](./week2/334-increasing-triplet-subsequence.py)  `中等` `贪心`  ⭐⭐⭐ 🤢
+
+
+
 ### week2 1/8 🆕 
 
 - [933 number-of-recent-calls](./week2/933-number-of-recent-calls.py)  `简单`  ⭐ 😃
