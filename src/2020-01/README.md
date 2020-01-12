@@ -75,7 +75,7 @@ Howard Wonanut 2020刷题
 > 关于223题，简单说一下。这道题本身没什么难度，关键在于仔细分析！！！
 
 - [926 flip-string-to-monotone-increasing](./week1/926-flip-string-to-monotone-increasing.py) `数组` `中等` `有意思的题` ⭐⭐⭐⭐  🤢 
-- [932 beautiful-array]()  `分治` `中等` `有意思的题` 😡 🆘
+- [932 beautiful-array](./week1/932-beautiful-array.py)  `分治` `中等` `有意思的题` ⭐⭐⭐⭐ 😡 🕑
 - [223 rectangle-area](./week1/223-rectangle-area.py) `中等` `数学 ` 🤢 
 - [669 trim-a-binary-search-tree](./week1/669-trim-a-binary-search-tree.py) `简单` `二叉树` ⭐ 😃
 - [917 reverse-only-letters](./week1/917-reverse-only-letters.py) `简单` `字符串` `双指针` `栈` ⭐  😃
