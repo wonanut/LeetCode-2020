@@ -39,7 +39,39 @@
 
 
 
-### 4 题目分门别类（TODO），具体参考下图：
+
+
+### 4 算法思路总结
+
+#### 4.1 并查集
+
+并查集核心代码：
+
+```python
+# 并查集模板Python代码
+class UnionSet(object):
+    def __init__(self, n):
+        self.parent = [i for i in range(n)]
+
+    def find(self, num):
+        if self.parent[num] == num:
+            return self.parent[num]
+        return self.find(self.parent[num])
+    
+    def union(self, num1, num2):
+        self.parent[self.find(num1)] = self.find(num2)
+
+    def count(self):
+        return len([1 for i, num in enumerate(self.parent) if num == i])
+```
+
+
+
+
+
+
+
+### 5 题目分门别类（TODO），具体参考下图：
 ![](./imgs/leetcode-map.jpg)
 
 **算法类**：

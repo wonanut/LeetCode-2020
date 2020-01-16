@@ -32,7 +32,26 @@ Howard Wonanut 2020刷题
 > 💬 959可以使用并查集的思想，需要专门整理一下。
 
 - [764 largest-plus-sign](./week2/764-largest-plus-sign.py)  `中等` `动态规划`  ⭐⭐⭐⭐ 🕑
-- [959 regions-cut-by-slashes](./week2/959-regions-cut-by-slashes.py)  `中等` `深度优先搜索` `并查集` `图`  ⭐⭐⭐⭐ 🆘 🕑
+- [959 regions-cut-by-slashes](./week2/959-regions-cut-by-slashes.py)  `中等` `深度优先搜索` `并查集` `图`  ⭐⭐⭐⭐⭐ 🕑
+
+并查集核心代码：
+
+```python
+class UnionSet(object):
+    def __init__(self, n):
+        self.parent = [i for i in range(n)]
+
+    def find(self, num):
+        if self.parent[num] == num:
+            return self.parent[num]
+        return self.find(self.parent[num])
+    
+    def union(self, num1, num2):
+        self.parent[self.find(num1)] = self.find(num2)
+
+    def count(self):
+        return len([1 for i, num in enumerate(self.parent) if num == i])
+```
 
 
 
