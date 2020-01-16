@@ -5,24 +5,28 @@
 
 ### 1 LeetCode刷题记录（每日更新）
 
-📅 更新打卡：[2020 - week1 - 1/11](./src/2020-01/README.md)
+📅 更新打卡：[2020 - week1 - 1/15](./src/2020-01/README.md)
 
 
 
 ### 2 各难度典型题目汇总
 
 - 😄 简单题目（典型题目）
-  - 
+
+
 
 - 🤢 中等难题（题目本身不是很难，但是并不一定写得出来）
   - [838 push-dominoes](./puzzles/838-push-dominoes.md) (TODO)
-- [932 beautiful-array]()(TODO)
+  - [932 beautiful-array]()(TODO)
   - [334 increasing-triplet-subsequences](./week2/334-increasing-triplet-subsequence.py) (TODO)
   - [838 push-dominoes](./week1/838-push-dominoes.py) (TODO)
   - [984 string-without-aaa-or-bbb](./week1/984-string-without-aaa-or-bbb.py) (TODO)
-  
+
+
+
 - 😡 困难题目（值得一看）
-  - 
+
+
 
 
 
@@ -82,3 +86,4 @@
 
 - [2020 - week1](./src/2020-01/week1/)
 - [2020 - week2](./src/2020-01/week2/)
+- [2020 - week3](./src/2020-01/week3/)

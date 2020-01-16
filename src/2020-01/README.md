@@ -6,7 +6,35 @@ Howard Wonanut 2020刷题
 
 
 
-### week2 1/11 🆕 
+### week3 1/16 🆕 
+
+- [707 design-linked-list](./week3/707-design-linked-list.py)  `中等` `链表`  ⭐
+
+
+
+### week3 1/15 🆕 
+
+- [1111 maximum-nesting-depth-of-two-valid-parentheses-strings](./week3/1111-maximum-nesting-depth-of-two-valid-parentheses-strings.py)  `中等` `贪心`  ⭐⭐
+- [13 roman-to-integer](./week3/13-roman-to-integer.py)  `中等` `贪心`  ⭐⭐
+
+
+
+### week3 1/14 🆕 
+
+> 💬 215，373, 378, 719, 786 都是一些类似的题，都是二分查找的思路。
+
+- [668 kth-smallest-number-in-multiplication-table](./week3/668-kth-smallest-number-in-multiplication-table.py)  `困难` `二分查找`  ⭐⭐⭐⭐⭐ 😡 🆘
+
+
+
+### week2 1/13 🕑
+
+- [764 largest-plus-sign](./week2/764-largest-plus-sign.py)  `中等` `动态规划`  ⭐⭐⭐⭐ 🕑
+- [959 regions-cut-by-slashes](./week2/959-regions-cut-by-slashes.py)  `中等` `动态规划`  ⭐⭐⭐⭐
+
+
+
+### week2 1/11 🕑
 
 > 💬 python除法想得到浮点型结果，和C++类似，需要将分子或者分母强制转换为浮点型。否则得到的结果是一个整数。
 
@@ -14,31 +42,31 @@ Howard Wonanut 2020刷题
 
 
 
-### week2 1/10 🆕 
+### week2 1/10 🕑
 
 - [334 increasing-triplet-subsequences](./week2/334-increasing-triplet-subsequence.py)  `中等` `贪心`  ⭐⭐⭐ 🤢 🕑
 
 
 
-### week2 1/9 🆕 
+### week2 1/9 
 
 - [1029 two-city-scheduling](./week2/1029-two-city-scheduling.py)  `简单` `贪心`  ⭐⭐ 🤢
 
 
 
-### week2 1/8 🆕 
+### week2 1/8 
 
 - [933 number-of-recent-calls](./week2/933-number-of-recent-calls.py)  `简单`  ⭐ 😃
 
 
 
-### week2 1/6 🆕 
+### week2 1/6 🕑
 
 - [1162 as-far-from-land-as-possible](./week2/1162-as-far-from-land-as-possible.py)  `中等`  ⭐⭐  🤢  🆘
 
 
 
-### week1 1/5 🆕 
+### week1 1/5 🕑
 
 > 💬 有时候并不一定要使用DP、分治、递归这几类算法思想才能解决问题。很多实际问题的解法需要自己总结观察，将大问题切分为小问题解决，而且解法可能很简单，只是过程很繁琐，需要考虑很多细节问题，如838题。
 
@@ -46,7 +74,7 @@ Howard Wonanut 2020刷题
 
 
 
-### week1 1/4 🆕 
+### week1 1/4 🕑
 
 > 💬 有些题目无法使用递归、DP、DFS、分治这些思想实现，只能按照逻辑直接写，如984贪心思想的解法。
 
@@ -54,7 +82,7 @@ Howard Wonanut 2020刷题
 
 
 
-### week1 1/3 🆕 
+### week1 1/3 🕑
 
 > 💬 发现遇到字符串数组类题目往往就卡壳了，其实此类题目并没有太多技巧，696题同1/1的926题类似，需要总结。
 
@@ -62,13 +90,13 @@ Howard Wonanut 2020刷题
 
 
 
-### week1 1/2 🆕
+### week1 1/2 🕑
 
 - [934 shortest-bridge]()  `中等` `DFS` `BFS`  😡 🆘
 
 
 
-### week1 1/1 🆕
+### week1 1/1 🕑
 
 > 💬 逻辑思维能力还是不行，在遇到细节问题一定要沉住气仔细思考，如223题。
 >
@@ -82,7 +110,7 @@ Howard Wonanut 2020刷题
 
 
 
-### week1 12/31 🕑
+### week1 12/31
 
 - [71 simplify-path](./week1/71-simplify-path.py) `栈` `中等` ⭐⭐  😃
 - [173 binary-search-tree-iterator](./week1/173-binary-search-tree-iterator.py) `栈` `中等` ⭐⭐  😃
