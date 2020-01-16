@@ -8,14 +8,14 @@ Howard Wonanut 2020刷题
 
 ### week3 1/16 🆕 
 
-- [707 design-linked-list](./week3/707-design-linked-list.py)  `中等` `链表`  ⭐
+- [707 design-linked-list](./week3/707-design-linked-list.py)  `中等` `链表`  ⭐ 😃
 
 
 
 ### week3 1/15 🆕 
 
 - [1111 maximum-nesting-depth-of-two-valid-parentheses-strings](./week3/1111-maximum-nesting-depth-of-two-valid-parentheses-strings.py)  `中等` `贪心`  ⭐⭐
-- [13 roman-to-integer](./week3/13-roman-to-integer.py)  `中等` `贪心`  ⭐⭐
+- [13 roman-to-integer](./week3/13-roman-to-integer.py)  `中等` `贪心`  ⭐⭐ 🆘
 
 
 
@@ -29,8 +29,10 @@ Howard Wonanut 2020刷题
 
 ### week2 1/13 🕑
 
+> 💬 959可以使用并查集的思想，需要专门整理一下。
+
 - [764 largest-plus-sign](./week2/764-largest-plus-sign.py)  `中等` `动态规划`  ⭐⭐⭐⭐ 🕑
-- [959 regions-cut-by-slashes](./week2/959-regions-cut-by-slashes.py)  `中等` `动态规划`  ⭐⭐⭐⭐
+- [959 regions-cut-by-slashes](./week2/959-regions-cut-by-slashes.py)  `中等` `深度优先搜索` `并查集` `图`  ⭐⭐⭐⭐ 🆘 🕑
 
 
 

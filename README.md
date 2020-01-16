@@ -5,7 +5,7 @@
 
 ### 1 LeetCode刷题记录（每日更新）
 
-📅 更新打卡：[2020 - week1 - 1/15](./src/2020-01/README.md)
+📅 更新打卡：[2020 - week1 - 1/16](./src/2020-01/README.md)
 
 
 
@@ -21,6 +21,7 @@
   - [334 increasing-triplet-subsequences](./week2/334-increasing-triplet-subsequence.py) (TODO)
   - [838 push-dominoes](./week1/838-push-dominoes.py) (TODO)
   - [984 string-without-aaa-or-bbb](./week1/984-string-without-aaa-or-bbb.py) (TODO)
+  - [959 regions-cut-by-slashes](./week2/959-regions-cut-by-slashes.py) (并查集，TODO)
 
 
 
