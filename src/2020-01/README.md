@@ -9,13 +9,15 @@ Howard Wonanut 2020刷题
 ### week3 1/16 🆕 
 
 - [707 design-linked-list](./week3/707-design-linked-list.py)  `中等` `链表`  ⭐ 😃
+- [953 verifying-an-alien-dictionary](./week3/953-verifying-an-alien-dictionary.py)  `简单` `哈希`  ⭐⭐⭐ 😡 🆘
+- [113 path-sum-ii](./week3/113-path-sum-ii.py)  `中等` `dfs`  ⭐⭐ 😃
 
 
 
 ### week3 1/15 🆕 
 
 - [1111 maximum-nesting-depth-of-two-valid-parentheses-strings](./week3/1111-maximum-nesting-depth-of-two-valid-parentheses-strings.py)  `中等` `贪心`  ⭐⭐
-- [13 roman-to-integer](./week3/13-roman-to-integer.py)  `中等` `贪心`  ⭐⭐ 🆘
+- [13 roman-to-integer](./week3/13-roman-to-integer.py)  `简单` `数学` `字符串`  ⭐⭐
 
 
 
