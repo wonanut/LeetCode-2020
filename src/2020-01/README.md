@@ -6,10 +6,21 @@ Howard Wonanut 2020刷题
 
 
 
+### week3 1/17 🆕 
+
+- [342 power-of-four](./week3/342-power-of-four.py)  `简单` `位运算`  ⭐⭐⭐ 🕑
+
+检查一个数是否为2的幂
+
+```python
+x > 0 and x & (x - 1) == 0
+```
+
+
 ### week3 1/16 🆕 
 
 - [707 design-linked-list](./week3/707-design-linked-list.py)  `中等` `链表`  ⭐ 😃
-- [953 verifying-an-alien-dictionary](./week3/953-verifying-an-alien-dictionary.py)  `简单` `哈希`  ⭐⭐⭐ 😡 🆘
+- [953 verifying-an-alien-dictionary](./week3/953-verifying-an-alien-dictionary.py)  `简单` `哈希`  ⭐⭐⭐ 😡
 - [113 path-sum-ii](./week3/113-path-sum-ii.py)  `中等` `dfs`  ⭐⭐ 😃
 
 
