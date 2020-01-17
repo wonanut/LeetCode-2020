@@ -1,11 +1,11 @@
 # LeetCode-2020
 马上进入2020找实习冲刺阶段，我决定以天为单位，记录每天做的LeetCode习题，方便后期整理。
 
-
+![](./imgs/leetcode-map.jpg)
 
 ### 1 LeetCode刷题记录（每日更新）
 
-📅 更新打卡：[2020 - week1 - 1/16](./src/2020-01/README.md)
+📅 更新打卡：[2020 - week1 - 1/17](./src/2020-01/README.md)
 
 
 
@@ -22,6 +22,7 @@
   - [838 push-dominoes](./week1/838-push-dominoes.py) (TODO)
   - [984 string-without-aaa-or-bbb](./week1/984-string-without-aaa-or-bbb.py) (TODO)
   - [959 regions-cut-by-slashes](./week2/959-regions-cut-by-slashes.py) (并查集，TODO)
+  - [96-unique-binary-search-trees](./week3/96-unique-binary-search-trees.py) (二叉搜索树，TODO)
 
 
 
@@ -65,8 +66,6 @@ class UnionSet(object):
         return len([1 for i, num in enumerate(self.parent) if num == i])
 ```
 
-
-
 #### 4.2 位运算
 
 检查数x是否为2的幂：
@@ -75,11 +74,13 @@ class UnionSet(object):
 x > 0 and x & (x - 1) == 0
 ```
 
+#### 4.3 二叉搜索树递归
 
 
-### 5 题目分门别类（TODO），具体参考下图：
-![](./imgs/leetcode-map.jpg)
 
+
+
+### 5 题目分门别类（TODO）：
 **算法类**：
 
 - 基础技巧：分治、二分、贪心
