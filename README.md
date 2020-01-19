@@ -5,7 +5,7 @@
 
 ### 1 LeetCode刷题记录（每日更新）
 
-📅 更新打卡：[2020 - week1 - 1/17](./src/2020-01/README.md)
+📅 更新打卡：[2020 - week1 - 1/18](./src/2020-01/README.md)
 
 
 
@@ -23,6 +23,8 @@
   - [984 string-without-aaa-or-bbb](./week1/984-string-without-aaa-or-bbb.py) (TODO)
   - [959 regions-cut-by-slashes](./week2/959-regions-cut-by-slashes.py) (并查集，TODO)
   - [96-unique-binary-search-trees](./week3/96-unique-binary-search-trees.py) (二叉搜索树，TODO)
+  - [96-unique-binary-search-trees](./week3/96-unique-binary-search-trees.py) (二叉搜索树，TODO)
+  - [399-evaluate-division](./src/2020-01/week3/399-evaluate-division.py) (并查集，TODO)
 
 
 
@@ -66,6 +68,13 @@ class UnionSet(object):
         return len([1 for i, num in enumerate(self.parent) if num == i])
 ```
 
+并查集经典题目：
+
+- [959 regions-cut-by-slashes](./src/2020-01/week2/959-regions-cut-by-slashes.py) (TODO)
+- [399-evaluate-division](./src/2020-01/week3/399-evaluate-division.py) (TODO)
+
+
+
 #### 4.2 位运算
 
 检查数x是否为2的幂：
@@ -73,6 +82,8 @@ class UnionSet(object):
 ```python
 x > 0 and x & (x - 1) == 0
 ```
+
+
 
 #### 4.3 二叉搜索树递归
 
@@ -97,7 +108,7 @@ x > 0 and x & (x - 1) == 0
 
 **数据结构类**：
 
-- 数组与链表：单 / 双向链表
+- 数组与链表
 
 - 栈与队列
 
@@ -105,7 +116,9 @@ x > 0 and x & (x - 1) == 0
 
 - 堆：最大堆 ／ 最小堆
 
-- 树与图：最近公共祖先、并查集
+- 二叉树 
+
+- 图：最近公共祖先、并查集、图论
 
 - 字符串：前缀树（字典树） ／ 后缀树
 
