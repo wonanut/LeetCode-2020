@@ -8,9 +8,25 @@ Howard Wonanut 2020刷题 / 过于简单的题目不做记录
 
 ### week3 1/22 🆕 
 
-> 💬949是一道简单题，但是我不会做！！！
+> 💬949是一道简单题，但是我不会做！！
 
 - [949-largest-time-for-given-digits](./week4/949-largest-time-for-given-digits.py)  `简单` `数学` ⭐⭐⭐⭐⭐⭐⭐ 😡
+- [617-merge-two-binary-trees](./week4/617-merge-two-binary-trees.py) `简单` `递归` ⭐⭐
+- [200-number-of-islands](./week4/200-number-of-islands.py) `中等` `图` `并查集` `DFS` ⭐⭐⭐
+- [46-permutations](./week4/46-permutations.py) `中等` `回溯  ⭐⭐
+- [79-word-search](./week4/79-word-search.py) `中等` `回溯  ⭐⭐⭐⭐ 🆘 🕑
+- [236-lowest-common-ancestor-of-a-binary-tree](./week4/236-lowest-common-ancestor-of-a-binary-tree.py) `中等` `二叉树经典题目`  ⭐⭐⭐⭐ 🆘 🕑
+- [47-permutations-ii](./week4/47-permutations-ii.py) `中等` 递归  ⭐⭐⭐⭐ 🆘
+
+> 💬 python中的二维数组的拷贝需要深拷贝：
+>
+> import copy
+>
+> b = copy.deepcopy(a)
+
+- [51-n-queens](./week4/51-n-queens.py) `困难` 递归经典题目  ⭐⭐⭐⭐⭐
+
+
 
 python中itertools库中的combinations和permutations函数可生成组合和排列
 
@@ -27,7 +43,20 @@ print(list(itertools.permutations([1,2,3])))
 使用dfs生成全排列：
 
 ```python
-# dfs模板
+# dfs模板，简洁版
+def permute(nums):
+    def dfs(nums, path):
+        if not nums:
+            ans.append(path)
+            return
+        for i in range(len(nums)):
+            dfs(nums[:i] + nums[i + 1:], path + [nums[i]])
+    ans = []
+    dfs(nums, [])
+    return ans
+
+
+# dfs模板：丑陋版
 def permutations(A):
     ans = []
     def dfs(arr):
