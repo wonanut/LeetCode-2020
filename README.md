@@ -5,13 +5,14 @@
 
 ### 1 LeetCode刷题记录（每日更新）
 
-📅 更新打卡：[2020 - week1 - 1/18](./src/2020-01/README.md)
+📅 更新打卡：[2020 - week1 - 1/21](./src/2020-01/README.md)
 
 
 
 ### 2 各难度典型题目汇总
 
 - 😄 简单题目（典型题目）
+  - [949-largest-time-for-given-digits](./week4/949-largest-time-for-given-digits.py) (TODO)
 
 
 
@@ -48,18 +49,38 @@
 
 #### 4.1 并查集
 
+并查集是一种树形数据结构，用于处理一些非连通子图的合并以及查询问题，主要使用`Union`以及`find`两个方法定义了该数据结构的相关操作：
+
+- Find：确定给定元素属于哪个子集，可以用于确定两个元素是否属于同一个子集；
+- Union：将两个子集合并成同一个集合。
+
 并查集核心代码：
 
 ```python
-# 并查集模板Python代码
 class UnionSet(object):
-    def __init__(self, n):
-        self.parent = [i for i in range(n)]
-
+    def __init__(self, n, init_list = None):
+        if init_list:
+            self.parent = init_list
+        else:
+            self.parent = [i for i in range(n)]
+    
+    def __str__(self):
+        return str(self.parent)
+    
+    # 不带路径压缩的find函数
     def find(self, num):
         if self.parent[num] == num:
             return self.parent[num]
         return self.find(self.parent[num])
+       
+    # 带路径压缩的find函数:在执行find函数的时候完成路径压缩
+    def find(self, num):
+        root = num
+        while root != self.parent[root]:
+            root = self.parent[root]
+        while num != root:
+            self.parent[num], num = root, self.parent[num]
+        return root
     
     def union(self, num1, num2):
         self.parent[self.find(num1)] = self.find(num2)

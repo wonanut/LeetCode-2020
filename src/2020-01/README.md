@@ -6,13 +6,69 @@ Howard Wonanut 2020刷题 / 过于简单的题目不做记录
 
 
 
-### week3 1/18 🆕 
+### week3 1/22 🆕 
 
-- [399-399-evaluate-division](./week3/399-399-evaluate-division.py)  `中等` `并查集` `图`  ⭐⭐⭐⭐ 🕑
+> 💬949是一道简单题，但是我不会做！！！
+
+- [949-largest-time-for-given-digits](./week4/949-largest-time-for-given-digits.py)  `简单` `数学` ⭐⭐⭐⭐⭐⭐⭐ 😡
+
+python中itertools库中的combinations和permutations函数可生成组合和排列
+
+```python
+import itertools
+
+print(list(itertools.combinations([1,2,3], 2)))
+# 输出 [(1, 2), (1, 3), (2, 3)]
+
+print(list(itertools.permutations([1,2,3])))
+# 输出 [(1, 2), (1, 3), (2, 3)]
+```
+
+使用dfs生成全排列：
+
+```python
+# dfs模板
+def permutations(A):
+    ans = []
+    def dfs(arr):
+        if len(arr) == len(A):
+            ans.append(arr[:])
+            return
+        
+        for i in range(len(A)):
+            if A[i] != -1:
+                temp, A[i] = A[i], -1
+                arr.append(temp)
+                dfs(arr)
+                arr.pop()
+                A[i] = temp
+    dfs([])
+    return ans
+
+print(permutations([1,2,3]))
+```
 
 
 
-### week3 1/17 🆕 
+### week3 1/21 🆕 
+
+- [1043-partition-array-for-maximum-sum](./week4/1043-partition-array-for-maximum-sum.py)  `中等` `DP` ⭐⭐⭐⭐  😡 🕑
+
+
+
+### week3 1/19 🆕 
+
+- [409-longest-palindrome](./week4/409-longest-palindrome.py)  `中等` `哈希` ⭐ 
+
+
+
+### week3 1/18 🕑
+
+- [399-evaluate-division](./week3/399-evaluate-division.py)  `中等` `并查集` `图`  ⭐⭐⭐⭐ 🕑 🆘
+
+
+
+### week3 1/17 🕑
 
 > 💬**卡塔兰数**是组合数学中一个常在各种计算问题中出现的数列，卡塔兰数的一般公式为 C(2n,n)/(n+1)，96题用到了，还有其他问题如**出栈次序问题**也涉及到卡特兰数的应用。
 
@@ -29,7 +85,7 @@ x > 0 and x & (x - 1) == 0
 ```
 
 
-### week3 1/16 🆕 
+### week3 1/16 🕑
 
 - [707 design-linked-list](./week3/707-design-linked-list.py)  `中等` `链表`  ⭐ 😃
 - [953 verifying-an-alien-dictionary](./week3/953-verifying-an-alien-dictionary.py)  `简单` `哈希`  ⭐⭐⭐ 😡
@@ -37,14 +93,14 @@ x > 0 and x & (x - 1) == 0
 
 
 
-### week3 1/15 🆕 
+### week3 1/15 
 
 - [1111 maximum-nesting-depth-of-two-valid-parentheses-strings](./week3/1111-maximum-nesting-depth-of-two-valid-parentheses-strings.py)  `中等` `贪心`  ⭐⭐
 - [13 roman-to-integer](./week3/13-roman-to-integer.py)  `简单` `数学` `字符串`  ⭐⭐
 
 
 
-### week3 1/14 🆕 
+### week3 1/14 🕑
 
 > 💬 215，373, 378, 719, 786 都是一些类似的题，都是二分查找的思路。
 
@@ -63,13 +119,29 @@ x > 0 and x & (x - 1) == 0
 
 ```python
 class UnionSet(object):
-    def __init__(self, n):
-        self.parent = [i for i in range(n)]
-
+    def __init__(self, n, init_list = None):
+        if init_list:
+            self.parent = init_list
+        else:
+            self.parent = [i for i in range(n)]
+    
+    def __str__(self):
+        return str(self.parent)
+    
+    # 不带路径压缩的find函数
     def find(self, num):
         if self.parent[num] == num:
             return self.parent[num]
         return self.find(self.parent[num])
+       
+    # 带路径压缩的find函数:在执行find函数的时候完成路径压缩
+    def find(self, num):
+        root = num
+        while root != self.parent[root]:
+            root = self.parent[root]
+        while num != root:
+            self.parent[num], num = root, self.parent[num]
+        return root
     
     def union(self, num1, num2):
         self.parent[self.find(num1)] = self.find(num2)
