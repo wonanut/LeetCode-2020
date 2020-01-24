@@ -5,7 +5,7 @@
 
 ### 1 LeetCode刷题记录（每日更新）
 
-📅 更新打卡：[2020 - week1 - 1/21](./src/2020-01/README.md)
+📅 更新打卡：[2020 - week1 - 1/24](./src/2020-01/README.md)
 
 
 
@@ -26,12 +26,13 @@
   - [96-unique-binary-search-trees](./week3/96-unique-binary-search-trees.py) (二叉搜索树，TODO)
   - [96-unique-binary-search-trees](./week3/96-unique-binary-search-trees.py) (二叉搜索树，TODO)
   - [399-evaluate-division](./src/2020-01/week3/399-evaluate-division.py) (并查集，TODO)
+  - [79-word-search](./week4/79-word-search.py) (回溯，TODO)
+  - [236-lowest-common-ancestor-of-a-binary-tree](./week4/236-lowest-common-ancestor-of-a-binary-tree.py)  (二叉树递归，TODO)
 
 
 
 - 😡 困难题目（值得一看）
-
-
+  - [52-n-queens-ii](./src/2020-01/week4/52-n-queens-ii.py) (TODO)
 
 
 

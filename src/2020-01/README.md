@@ -6,17 +6,34 @@ Howard Wonanut 2020刷题 / 过于简单的题目不做记录
 
 
 
-### week3 1/22 🆕 
+### week4 1/24 🆕 
+
+- [236-lowest-common-ancestor-of-a-binary-tree](./week4/236-lowest-common-ancestor-of-a-binary-tree.py) `中等` `二叉树经典题目`  ⭐⭐⭐⭐ 🕑
+
+
+
+### week4 1/23 🆕 
+
+> 💬 python字母与ascii码相互转换函数：ord('a')，chr(101)
+
+- [47-permutations-ii](./week4/47-permutations-ii.py) `中等` `递归`  ⭐⭐⭐⭐ 🕑
+- [916-word-subsets](./week4/916-word-subsets.py) `中等` `字符串`  ⭐⭐⭐
+- [52-n-queens-ii](./week4/52-n-queens-ii.py) `困难` `递归经典题目`  ⭐⭐⭐⭐⭐ 🕑
+- [77-combinations](./week4/77-combinations.py) `中等` `回溯`  ⭐⭐⭐ 🕑
+- [93-restore-ip-addresses](./week4/93-restore-ip-addresses.py) `中等` `回溯`  ⭐⭐⭐
+- [1219-path-with-maximum-gold](./week4/1219-path-with-maximum-gold.py) `中等` `回溯`  ⭐⭐⭐⭐
+
+
+
+### week4 1/22 🆕 
 
 > 💬949是一道简单题，但是我不会做！！
 
 - [949-largest-time-for-given-digits](./week4/949-largest-time-for-given-digits.py)  `简单` `数学` ⭐⭐⭐⭐⭐⭐⭐ 😡
 - [617-merge-two-binary-trees](./week4/617-merge-two-binary-trees.py) `简单` `递归` ⭐⭐
 - [200-number-of-islands](./week4/200-number-of-islands.py) `中等` `图` `并查集` `DFS` ⭐⭐⭐
-- [46-permutations](./week4/46-permutations.py) `中等` `回溯  ⭐⭐
-- [79-word-search](./week4/79-word-search.py) `中等` `回溯  ⭐⭐⭐⭐ 🆘 🕑
-- [236-lowest-common-ancestor-of-a-binary-tree](./week4/236-lowest-common-ancestor-of-a-binary-tree.py) `中等` `二叉树经典题目`  ⭐⭐⭐⭐ 🆘 🕑
-- [47-permutations-ii](./week4/47-permutations-ii.py) `中等` 递归  ⭐⭐⭐⭐ 🆘
+- [46-permutations](./week4/46-permutations.py) `中等` `回溯`  ⭐⭐
+- [79-word-search](./week4/79-word-search.py) `中等` `回溯`  ⭐⭐⭐⭐ 🕑
 
 > 💬 python中的二维数组的拷贝需要深拷贝：
 >
@@ -24,7 +41,7 @@ Howard Wonanut 2020刷题 / 过于简单的题目不做记录
 >
 > b = copy.deepcopy(a)
 
-- [51-n-queens](./week4/51-n-queens.py) `困难` 递归经典题目  ⭐⭐⭐⭐⭐
+- [51-n-queens](./week4/51-n-queens.py) `困难` `递归经典题目`  ⭐⭐⭐⭐⭐
 
 
 
@@ -79,7 +96,7 @@ print(permutations([1,2,3]))
 
 
 
-### week3 1/21 🆕 
+### week4 1/21 🆕 
 
 - [1043-partition-array-for-maximum-sum](./week4/1043-partition-array-for-maximum-sum.py)  `中等` `DP` ⭐⭐⭐⭐  😡 🕑
 
