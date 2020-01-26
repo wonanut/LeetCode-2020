@@ -20,3 +20,33 @@ class Solution:
         return helper(1, n + 1)
 
 
+# 使用备忘录的方法
+class Solution(object):
+    def numTrees(self, n):
+        def helper(arr):
+            if len(arr) <= 1:
+                return 1
+            if record[len(arr)] != 0:
+                return record[len(arr)]
+            
+            ans = 0
+            for i in range(len(arr)):
+                left, right = helper(arr[:i]), helper(arr[i + 1:])
+                ans += left * right
+            record[len(arr)] = ans
+            return ans
+
+        arr = [i for i in range(1, n + 1)]
+        record = {i: 0 for i in range(1, n + 1)}
+        return helper(arr)
+
+# 动态规划解法
+class Solution(object):
+    def numTrees(self, n):
+        dp = [0 for i in range(n + 1)]
+        dp[0], dp[1] = 1, 1
+
+        for i in range(2, n + 1):
+            for j in range(1, i + 1):
+                dp[i] += dp[j - 1] * dp[i - j]
+        return dp[n]

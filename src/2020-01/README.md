@@ -110,7 +110,7 @@ print(permutations([1,2,3]))
 
 ### week3 1/18 🕑
 
-- [399-evaluate-division](./week3/399-evaluate-division.py)  `中等` `并查集` `图`  ⭐⭐⭐⭐ 🕑 🆘
+- [399-evaluate-division](./week3/399-evaluate-division.py)  `中等` `并查集` `图`  ⭐⭐⭐⭐ 🕑
 
 
 
@@ -119,7 +119,7 @@ print(permutations([1,2,3]))
 > 💬**卡塔兰数**是组合数学中一个常在各种计算问题中出现的数列，卡塔兰数的一般公式为 C(2n,n)/(n+1)，96题用到了，还有其他问题如**出栈次序问题**也涉及到卡特兰数的应用。
 
 - [95-unique-binary-search-trees-ii](./week3/95-unique-binary-search-trees-ii.py)  `中等` `二叉搜索树`  ⭐⭐⭐ 🕑
-- [96-unique-binary-search-trees](./week3/96-unique-binary-search-trees.py)  `中等` `二叉搜索树`  ⭐⭐⭐ 🆘
+- [96-unique-binary-search-trees](./week3/96-unique-binary-search-trees.py)  `中等` `二叉搜索树`  ⭐⭐⭐ 🕑
 - [946-validate-stack-sequences](./week3/946-validate-stack-sequences.py)  `中等` `栈`  ⭐⭐
 
 - [342 power-of-four](./week3/342-power-of-four.py)  `简单` `位运算`  ⭐⭐⭐ 🕑
@@ -129,6 +129,19 @@ print(permutations([1,2,3]))
 ```python
 x > 0 and x & (x - 1) == 0
 ```
+
+
+
+卡塔兰数的递推公式:
+$$
+G(n)=\sum_{i=1}^n{G(i-1)·G(n-i)}
+$$
+卡塔兰数便于计算的定义如下：
+$$
+C_0=1,\quad C_{n}=\frac{1}{n+1}C \left( \begin{array}{1}2n \\ n \end{array} \right)=\frac{(2n)!}{(n+1)!n!}
+$$
+
+
 
 
 ### week3 1/16 🕑
