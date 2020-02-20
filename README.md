@@ -5,7 +5,7 @@
 
 ### 1 LeetCode刷题记录（每日更新）
 
-📅 更新打卡：[2020 - week1 - 1/24](./src/2020-01/README.md)
+📅 更新打卡：[2020 - week3 - 2/18](./src/2020-02/README.md)
 
 
 
@@ -13,6 +13,7 @@
 
 - 😄 简单题目（典型题目）
   - [949-largest-time-for-given-digits](./week4/949-largest-time-for-given-digits.py) (TODO)
+  - [206. 反转链表](https://leetcode-cn.com/problems/reverse-linked-list/)
 
 
 
@@ -33,16 +34,29 @@
 
 - 😡 困难题目（值得一看）
   - [52-n-queens-ii](./src/2020-01/week4/52-n-queens-ii.py) (TODO)
+  - [154. 寻找旋转排序数组中的最小值 II](https://leetcode-cn.com/problems/find-minimum-in-rotated-sorted-array-ii/) `数组`⭐⭐⭐⭐⭐
 
 
 
-### 3 Daily Problem
+### 3 其他刷题项目
+
+### 3.1 Daily Problem
 
 （这是另一个每日刷题项目，有空的时候我也会更新）
 
 - [2020-01](DailyProblem/2020-01/)
 
 
+
+### 3.2 剑指Offer
+
+总结整理剑指Offer中部分经典题目
+
+- [面试题24. 反转链表（同LeetCode206）](./offer/24-反转链表.md)
+- [面试题03. 数组中重复的数字](./offer/03-数组中重复的数字.md)
+- [面试题12. 矩阵中的路径（同LeetCode79）](./offer/12-矩阵中的路径.md)
+- [面试题59 - I. 滑动窗口的最大值（同LeetCode239）](./offer/59-滑动窗口的最大值.md)
+- [面试题60. n个骰子的点数](./offer/60-n个色子的点数.md)
 
 
 
@@ -105,11 +119,150 @@ class UnionSet(object):
 x > 0 and x & (x - 1) == 0
 ```
 
+将最右边一位1置0：
+
+```python
+num = num & (num - 1)
+```
 
 
-#### 4.3 二叉搜索树递归
+
+#### 4.3 二叉树遍历
+
+层序遍历：
+
+```python
+def levelOrder(root):
+        if not root:
+            return []
+        ans = []
+        queue = [root]
+        while queue:
+            count = len(queue)
+            cur_line = []
+            while count:
+                cur = queue.pop(0)
+                cur_line.append(cur.val)
+                if cur.left:
+                    queue.append(cur.left)
+                if cur.right:
+                    queue.append(cur.right)
+                count -= 1
+            ans.append(cur_line)
+        return ans
+```
+
+前序遍历非递归写法：
+
+```python
+def preOrder(root):
+	if not root:
+        return []
+    ans = []
+    stack = [root]
+    while stack:
+        cur = stack.pop()
+        ans.append(cur.val)
+        # 这里注意了，是先访问右节点
+        if cur.right:
+            stack.append(cur.right)
+        if cur.left:
+            stack.append(cur.left)
+    return ans
+```
+
+中序遍历的非递归写法：
+
+```python
+def inOrder(root):
+	ans = []
+	stack = []
+    cur = root
+	while cur or stack:
+		if cur:
+			stack.append(cur.left)
+            cur = cur.left
+		else:
+			cur = stack.pop()
+			ans.append(cur.val)
+			cur = cur.right
+	return ans
+```
+
+后序遍历的非递归写法：
+
+```python
+# 从根节点开始依次迭代，弹出栈顶元素输出到输出列表中，然后依次压入它的所有孩子节点，按照从上到下、从左至右的顺序依次压入栈中。因为深度优先搜索后序遍历的顺序是从下到上、从左至右，所以需要将输出列表逆序输出。
+
+def postOrder(root):
+	if not root:
+        return []
+    ans = []
+    stack = [root]
+    while stack:
+        cur = stack.pop()
+        ans.append(cur.val)
+        if cur.left:
+            stack.append(cur.left)
+        if cur.right:
+            stack.append(cur.right)
+    return ans[::-1]
+```
 
 
+
+#### 4.4 排序算法
+
+冒泡排序：
+
+```python
+def bubbleSort(arr):
+	pass
+```
+
+插入排序：
+
+```python
+def insertSort(arr):
+	pass
+```
+
+选择排序：
+
+```python
+def selectSort(arr):
+	pass
+```
+
+快速排序：
+
+```python
+def quickSort(arr):
+	pass
+```
+
+归并排序：
+
+```python
+def mergeSort(arr):
+	pass
+```
+
+
+
+#### 4.5 BFS&DFS
+
+BFS解题模板：
+
+```python
+
+```
+
+DFS解题模板：
+
+```python
+
+```
 
 
 
@@ -126,11 +279,23 @@ x > 0 and x & (x - 1) == 0
 
 - 动态规划：背包问题、最长子序列
 
+- 数学/逻辑/规律：
+
+  - [794. 有效的井字游戏](https://leetcode-cn.com/problems/valid-tic-tac-toe-state/)
+  
   
 
 **数据结构类**：
 
-- 数组与链表
+- 数组
+
+  - 快慢指针
+  - 对撞指针
+  - 滑动窗口
+
+- 链表
+
+  - 链表反转
 
 - 栈与队列
 
@@ -138,9 +303,27 @@ x > 0 and x & (x - 1) == 0
 
 - 堆：最大堆 ／ 最小堆
 
+  - 优先队列
+
 - 二叉树 
 
-- 图：最近公共祖先、并查集、图论
+  - 递归
+    - [687. 最长同值路径](https://leetcode-cn.com/problems/longest-univalue-path/)
+    - [面试题68 - I. 二叉树的最近公共祖先](https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-zui-jin-gong-gong-zu-xian-lcof/solution/er-cha-shu-jiu-yong-di-gui-python-by-wonanut/)
+  - 遍历
+    - 二叉树的层次遍历：[102. 二叉树的层序遍历](https://leetcode-cn.com/problems/binary-tree-level-order-traversal/)
+    - 二叉树的先序遍历：[144. 二叉树的前序遍历](https://leetcode-cn.com/problems/binary-tree-preorder-traversal/)
+    - 二叉树的中序遍历：
+      - [94. 二叉树的中序遍历](https://leetcode-cn.com/problems/binary-tree-inorder-traversal/)
+      - [897. 递增顺序查找树](https://leetcode-cn.com/problems/increasing-order-search-tree/) 
+    - 二叉树的后序遍历：[145. 二叉树的后序遍历](https://leetcode-cn.com/problems/binary-tree-postorder-traversal/)
+    - 二叉树的垂序遍历：[987. 二叉树的垂序遍历](https://leetcode-cn.com/problems/vertical-order-traversal-of-a-binary-tree/)
+
+- 图：最近公共祖先、并查集
+
+  - DFS
+  - BFS
+  - 并查集
 
 - 字符串：前缀树（字典树） ／ 后缀树
 
