@@ -367,13 +367,13 @@ arr.sort(key = lambda x: (x[1], x[2], x3]))
 
 | 编号 | 题目                                                         | 标签       | 星标 | 挑战 |
 | ---- | ------------------------------------------------------------ | ---------- | ---- | ---- |
-| 72   | [面试题62. 圆圈中最后剩下的数字](https://leetcode-cn.com/problems/yuan-quan-zhong-zui-hou-sheng-xia-de-shu-zi-lcof/) | `约瑟夫环` | ⭐⭐⭐⭐ | 成功 |
+| 72   | [面试题62. 圆圈中最后剩下的数字](https://leetcode-cn.com/problems/yuan-quan-zhong-zui-hou-sheng-xia-de-shu-zi-lcof/) ✅ | `约瑟夫环` | ⭐⭐⭐⭐ | 成功 |
 | 73   | [31. 下一个排列](https://leetcode-cn.com/problems/next-permutation/) |            |      |      |
 | 74   | [889. 根据前序和后序遍历构造二叉树](https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-postorder-traversal/) |            | ⭐⭐⭐  |      |
 | 75   | [5342. 最多可以参加的会议数目](https://leetcode-cn.com/contest/weekly-contest-176/problems/maximum-number-of-events-that-can-be-attended/) |            |      |      |
-| 76   | [字节校园学习挑战赛0221](https://github.com/wonanut/LeetCode-2020/blob/master/zjxy/0221.cpp) | `DP`       | ⭐⭐⭐  | --   |
+| 76   | [字节校园学习挑战赛0221](https://github.com/wonanut/LeetCode-2020/blob/master/zjxy/0221.cpp) ✅ | `DP`       | ⭐⭐⭐  | --   |
 | 77   | [438. 找到字符串中所有字母异位词](./week3/438-找到字符串中所有字母异位词.md) | `滑动窗口` | ⭐⭐⭐  | 失败 |
-| 78   | [面试题 10.01. 合并排序的数组](https://leetcode-cn.com/problems/sorted-merge-lcci/) | `三指针`   | ⭐    | 成功 |
-| 79   | [字节校园学习挑战赛0223](https://github.com/wonanut/LeetCode-2020/blob/master/zjxy/0223.cpp) | `DP`       | ⭐    | 成功 |
-| 80   | 字节校园学习挑战赛0219                                       | `位运算`   |      | 失败 |
+| 78   | [面试题 10.01. 合并排序的数组](https://leetcode-cn.com/problems/sorted-merge-lcci/) ✅ | `三指针`   | ⭐    | 成功 |
+| 79   | [字节校园学习挑战赛0223](https://github.com/wonanut/LeetCode-2020/blob/master/zjxy/0223.cpp) ✅ | `DP`       | ⭐    | 成功 |
+| 80   | [字节校园学习挑战赛0219](https://github.com/wonanut/LeetCode-2020/blob/master/zjxy/0219.cpp) ✅ | `位运算`   | ⭐⭐⭐  | 失败 |
 
