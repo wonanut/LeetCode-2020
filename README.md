@@ -5,7 +5,7 @@
 
 ### 1 LeetCode刷题记录（每日更新）
 
-📅 更新打卡：[2020 - week3 - 2/18](./src/2020-02/README.md)
+📅 更新打卡：[2020 - week3 - 2/21](./src/2020-02/README.md)
 
 
 
@@ -52,11 +52,18 @@
 
 总结整理剑指Offer中部分经典题目
 
-- [面试题24. 反转链表（同LeetCode206）](./offer/24-反转链表.md)
-- [面试题03. 数组中重复的数字](./offer/03-数组中重复的数字.md)
-- [面试题12. 矩阵中的路径（同LeetCode79）](./offer/12-矩阵中的路径.md)
-- [面试题59 - I. 滑动窗口的最大值（同LeetCode239）](./offer/59-滑动窗口的最大值.md)
-- [面试题60. n个骰子的点数](./offer/60-n个色子的点数.md)
+- [面试题24. 反转链表（同LeetCode206）](./offer/24-反转链表.md) `链表`
+- [面试题03. 数组中重复的数字](./offer/03-数组中重复的数字.md) `哈希`
+- [面试题12. 矩阵中的路径（同LeetCode79）](./offer/12-矩阵中的路径.md) `DFS`
+- [面试题59 - I. 滑动窗口的最大值（同LeetCode239）](./offer/59-滑动窗口的最大值.md) `滑动窗口`
+- [面试题59-ii-队列的最大值](59-ii-队列的最大值.md) `滑动窗口`
+- [面试题60. n个骰子的点数](./offer/60-n个色子的点数.md) `DP`
+- [面试题52. 两个链表的第一个公共节点](./offer/52-两个链表的第一个公共节点.md) `快慢指针`
+- [面试题56 - I. 数组中数字出现的次数](./offer/56-i-数组中数字出现的次数.md) `位运算`
+- [面试题57. 和为s的两个数字](./offer/57-和为s的两个数字.md) `对撞指针`
+- [面试题14- I. 剪绳子](https://leetcode-cn.com/problems/jian-sheng-zi-lcof/) `DP` 🕑
+- [面试题53 - I. 在排序数组中查找数字 I](https://leetcode-cn.com/problems/zai-pai-xu-shu-zu-zhong-cha-zhao-shu-zi-lcof/) `逻辑` 🕑
+- [面试题62. 圆圈中最后剩下的数字](https://leetcode-cn.com/problems/yuan-quan-zhong-zui-hou-sheng-xia-de-shu-zi-lcof/) `约瑟夫环` 🕑
 
 
 
@@ -273,15 +280,37 @@ DFS解题模板：
 
 - 排序算法：快速排序、归并排序、计数排序
 
+  - 冒泡排序
+  - 快速排序
+  - 归并排序
+
 - 搜索算法：回溯、递归、深度优先遍历，广度优先遍历，二叉搜索树等
 
-- 图论：最短路径、最小生成树
+  - DFS
+  - BFS
+
+- *图论：最短路径、最小生成树
 
 - 动态规划：背包问题、最长子序列
 
+  - [面试题14- I. 剪绳子](https://leetcode-cn.com/problems/jian-sheng-zi-lcof/)
+  - [面试题60. n个骰子的点数](./offer/60-n个色子的点数.md) 
+
+- 位运算
+
+  - 异或：相同为0，不同为1
+  - [136. 只出现一次的数字](https://leetcode-cn.com/problems/single-number/)
+    - [137. 只出现一次的数字 II](https://leetcode-cn.com/problems/single-number-ii/)
+    - [260. 只出现一次的数字 III](https://leetcode-cn.com/problems/single-number-iii/)
+  - 与
+  - 左移/右移
+  - 综合
+  
 - 数学/逻辑/规律：
 
   - [794. 有效的井字游戏](https://leetcode-cn.com/problems/valid-tic-tac-toe-state/)
+  - [面试题61. 扑克牌中的顺子](https://leetcode-cn.com/problems/bu-ke-pai-zhong-de-shun-zi-lcof/)
+  - [面试题62. 圆圈中最后剩下的数字](https://leetcode-cn.com/problems/yuan-quan-zhong-zui-hou-sheng-xia-de-shu-zi-lcof/)
   
   
 
@@ -291,7 +320,10 @@ DFS解题模板：
 
   - 快慢指针
   - 对撞指针
+    - [面试题57. 和为s的两个数字](https://leetcode-cn.com/problems/he-wei-sde-liang-ge-shu-zi-lcof/)
   - 滑动窗口
+    - [面试题57 - II. 和为s的连续正数序列](https://leetcode-cn.com/problems/he-wei-sde-lian-xu-zheng-shu-xu-lie-lcof/)
+    - [面试题59 - I. 滑动窗口的最大值（同LeetCode239）](./offer/59-滑动窗口的最大值.md)
 
 - 链表
 

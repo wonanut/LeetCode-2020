@@ -10,15 +10,15 @@ Howard Wonanut 2020刷题 / 过于简单的题目（没有星星标记）只有�
 
 ### 2月做题记录表
 
-| 日期 | 数目 | 日期 | 数目 | 日期 | 数目 | 日期 | 数目 | 日期 | 数目 |
-| ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
-| 2/1  | 0    | 2/8  | 3    | 2/15 | 0    | 2/22 |      | 2/29 |      |
-| 2/2  | 0    | 2/9  | 0    | 2/16 | 8    | 2/23 |      |      |      |
-| 2/3  | 7    | 2/10 | 0    | 2/17 | 4    | 2/24 |      |      |      |
-| 2/4  | 2    | 2/11 | 0    | 2/18 | 3    | 2/25 |      |      |      |
-| 2/5  | 0    | 2/12 | 0    | 2/19 | 13   | 2/26 |      |      |      |
-| 2/6  | 1    | 2/13 | 0    | 2/20 | 5    | 2/27 |      |      |      |
-| 2/7  | 0    | 2/14 | 0    | 2/21 |      | 2/28 |      |      |      |
+| 日期 | 数目 | 日期 | 数目 | 日期 | 数目 | 日期 | 数目 | 日期  | 数目 |
+| ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----- | ---- |
+| 2/1  | 0    | 2/8  | 3    | 2/15 | 0    | 2/22 | 6    | 2/29  | -    |
+| 2/2  | 0    | 2/9  | 0    | 2/16 | 8    | 2/23 | -    | total | 62   |
+| 2/3  | 7    | 2/10 | 0    | 2/17 | 4    | 2/24 |      |       |      |
+| 2/4  | 2    | 2/11 | 0    | 2/18 | 3    | 2/25 |      |       |      |
+| 2/5  | 0    | 2/12 | 0    | 2/19 | 13   | 2/26 |      |       |      |
+| 2/6  | 1    | 2/13 | 0    | 2/20 | 8    | 2/27 |      |       |      |
+| 2/7  | 0    | 2/14 | 0    | 2/21 | 7    | 2/28 | -    |       |      |
 
 
 
@@ -260,39 +260,39 @@ sys.maxint
 
 ### week3 2/19 🆕二叉树刷分日
 
-【36】[239. 滑动窗口最大值](https://leetcode-cn.com/problems/sliding-window-maximum/) `困难` ⭐⭐⭐⭐⭐
+【36】[239. 滑动窗口最大值](https://leetcode-cn.com/problems/sliding-window-maximum/) `困难` `滑动窗口`⭐⭐⭐⭐⭐
 
-【37】[102. 二叉树的层序遍历](https://leetcode-cn.com/problems/binary-tree-level-order-traversal/) ⭐⭐
+【37】[102. 二叉树的层序遍历](https://leetcode-cn.com/problems/binary-tree-level-order-traversal/) `队列`⭐⭐
 
-【38】[107. 二叉树的层次遍历 II](https://leetcode-cn.com/problems/binary-tree-level-order-traversal-ii/) ⭐
+【38】[107. 二叉树的层次遍历 II](https://leetcode-cn.com/problems/binary-tree-level-order-traversal-ii/) `队列`⭐
 
-【39】[637. 二叉树的层平均值](https://leetcode-cn.com/problems/average-of-levels-in-binary-tree/) ⭐
+【39】[637. 二叉树的层平均值](https://leetcode-cn.com/problems/average-of-levels-in-binary-tree/) `队列`⭐
 
-【40】[94. 二叉树的中序遍历](https://leetcode-cn.com/problems/binary-tree-inorder-traversal/) ⭐⭐⭐
+【40】[94. 二叉树的中序遍历](https://leetcode-cn.com/problems/binary-tree-inorder-traversal/) `栈`⭐⭐⭐
 
-【41】[144. 二叉树的前序遍历](https://leetcode-cn.com/problems/binary-tree-preorder-traversal/) ⭐
+【41】[144. 二叉树的前序遍历](https://leetcode-cn.com/problems/binary-tree-preorder-traversal/) `栈`⭐
 
 【42】[145. 二叉树的后序遍历](https://leetcode-cn.com/problems/binary-tree-postorder-traversal/) `困难` `辅助栈`⭐⭐⭐⭐
 
-【43】[429. N叉树的层序遍历](https://leetcode-cn.com/problems/n-ary-tree-level-order-traversal/) ⭐⭐
+【43】[429. N叉树的层序遍历](https://leetcode-cn.com/problems/n-ary-tree-level-order-traversal/) `队列`⭐⭐
 
-【44】[589. N叉树的前序遍历](https://leetcode-cn.com/problems/n-ary-tree-preorder-traversal/) ⭐
+【44】[589. N叉树的前序遍历](https://leetcode-cn.com/problems/n-ary-tree-preorder-traversal/) `栈`⭐
 
-【45】[590. N叉树的后序遍历](https://leetcode-cn.com/problems/n-ary-tree-postorder-traversal/) ⭐⭐⭐⭐
+【45】[590. N叉树的后序遍历](https://leetcode-cn.com/problems/n-ary-tree-postorder-traversal/) `栈`⭐⭐⭐⭐
 
-【46】[105. 从前序与中序遍历序列构造二叉树](https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) ⭐⭐
+【46】[105. 从前序与中序遍历序列构造二叉树](https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) `递归`⭐⭐
 
 【47】[889. 根据前序和后序遍历构造二叉树](https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-postorder-traversal/) ⭐⭐⭐ 🆘
 
 【48】[897. 递增顺序查找树](https://leetcode-cn.com/problems/increasing-order-search-tree/) `在原节点上修改` ⭐⭐⭐⭐
 
-【49】[面试题32 - III. 从上到下打印二叉树 III](https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-iii-lcof/) ⭐⭐
+【49】[面试题32 - III. 从上到下打印二叉树 III](https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-iii-lcof/) `队列`⭐⭐
 
 
 
 ### week3 2/20 🆕
 
-【50】[987. 二叉树的垂序遍历](https://leetcode-cn.com/problems/vertical-order-traversal-of-a-binary-tree/) ⭐⭐⭐
+【50】[987. 二叉树的垂序遍历](https://leetcode-cn.com/problems/vertical-order-traversal-of-a-binary-tree/) `DFS`⭐⭐⭐
 
 python中的sort函数可以指定对多个key进行排序：
 
@@ -301,10 +301,72 @@ python中的sort函数可以指定对多个key进行排序：
 arr.sort(key = lambda x: (x[1], x[2], x3]))
 ```
 
-【51】[687. 最长同值路径](./week3/687-longest-univalue-path.py) ⭐⭐⭐
+【51】[687. 最长同值路径](./week3/687-longest-univalue-path.py) `递归`⭐⭐⭐
 
-【52】[938. 二叉搜索树的范围和](https://leetcode-cn.com/problems/range-sum-of-bst/) ⭐
+【52】[938. 二叉搜索树的范围和](https://leetcode-cn.com/problems/range-sum-of-bst/) `递归`⭐
 
-【53】[794. 有效的井字游戏](https://leetcode-cn.com/problems/valid-tic-tac-toe-state/) ⭐⭐⭐⭐
+【53】[794. 有效的井字游戏](https://leetcode-cn.com/problems/valid-tic-tac-toe-state/) `逻辑`⭐⭐⭐⭐
 
-【54】[面试题60. n个骰子的点数](./offer/60-n个色子的点数.md) ⭐⭐⭐⭐
+【54】[面试题60. n个骰子的点数](./offer/60-n个色子的点数.md) `DP`⭐⭐⭐⭐
+
+【55】[面试题13. 机器人的运动范围](https://leetcode-cn.com/problems/ji-qi-ren-de-yun-dong-fan-wei-lcof/) `DFS`⭐
+
+【56】[面试题50. 第一个只出现一次的字符](https://leetcode-cn.com/problems/di-yi-ge-zhi-chu-xian-yi-ci-de-zi-fu-lcof/) `hash`⭐
+
+【57】[面试题55 - I. 二叉树的深度](https://leetcode-cn.com/problems/er-cha-shu-de-shen-du-lcof/) `递归`⭐
+
+
+
+### week3 2/21 🆕
+
+【58】[面试题14- I. 剪绳子](https://leetcode-cn.com/problems/jian-sheng-zi-lcof/) `DP`⭐⭐⭐
+
+【59】[面试题52. 两个链表的第一个公共节点](https://leetcode-cn.com/problems/liang-ge-lian-biao-de-di-yi-ge-gong-gong-jie-dian-lcof/) `链表` `快慢指针`⭐⭐
+
+【60】[面试题55 - II. 平衡二叉树](https://leetcode-cn.com/problems/ping-heng-er-cha-shu-lcof/) `递归`⭐
+
+【61】[面试题57 - II. 和为s的连续正数序列](https://leetcode-cn.com/problems/he-wei-sde-lian-xu-zheng-shu-xu-lie-lcof/) `滑动窗口`⭐
+
+【62】[面试题59 - II. 队列的最大值](https://leetcode-cn.com/problems/dui-lie-de-zui-da-zhi-lcof/) `滑动窗口` ⭐⭐
+
+【63】[面试题57. 和为s的两个数字](https://leetcode-cn.com/problems/he-wei-sde-liang-ge-shu-zi-lcof/) `对撞指针`⭐
+
+【64】[面试题56 - I. 数组中数字出现的次数](https://leetcode-cn.com/problems/shu-zu-zhong-shu-zi-chu-xian-de-ci-shu-lcof/) `位运算-异或`⭐⭐⭐⭐
+
+
+
+### week3 2/22 🆕
+
+还是用C++写题目吧，以后转战C++，用VS调试。
+
+`今日总结`
+
+1. 递归修改指针的问题一定要小心，很容易陷入死循环，如114题。
+2. 一定要耐心认真读题！！！
+
+| 编号 | 题目                                                         | 标签        | 星标  | 挑战 |
+| ---- | ------------------------------------------------------------ | ----------- | ----- | ---- |
+| 65   | [114. 二叉树展开为链表](https://leetcode-cn.com/problems/flatten-binary-tree-to-linked-list/) | `递归`      | ⭐⭐⭐⭐⭐ | 失败 |
+| 66   | [129. 求根到叶子节点数字之和](https://leetcode-cn.com/problems/sum-root-to-leaf-numbers/) | `递归`      | ⭐⭐    | 成功 |
+| 67   | 字节校园学习挑战赛0221                                       | `??`        |       | 失败 |
+| 68   | [55. 跳跃游戏](https://leetcode-cn.com/problems/jump-game/solution/55-by-ikaruga/) | `贪心` `DP` |       | 失败 |
+| 69   | [34. 在排序数组中查找元素的第一个和最后一个位置](https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array/) | `二分`      | ⭐⭐    | 成功 |
+| 70   | [面试题53 - I. 在排序数组中查找数字 I](https://leetcode-cn.com/problems/zai-pai-xu-shu-zu-zhong-cha-zhao-shu-zi-lcof/) | `二分`      | ⭐⭐    | 成功 |
+| 71   | [面试题61. 扑克牌中的顺子](https://leetcode-cn.com/problems/bu-ke-pai-zhong-de-shun-zi-lcof/) | `逻辑`      | ⭐⭐    | 失败 |
+
+
+
+### week3 2/23 🆕
+
+`今日总结`
+
+| 编号 | 题目                                                         | 标签       | 星标 | 挑战 |
+| ---- | ------------------------------------------------------------ | ---------- | ---- | ---- |
+| 72   | [面试题62. 圆圈中最后剩下的数字](https://leetcode-cn.com/problems/yuan-quan-zhong-zui-hou-sheng-xia-de-shu-zi-lcof/) | `约瑟夫环` |      |      |
+|      |                                                              |            |      |      |
+|      |                                                              |            |      |      |
+|      |                                                              |            |      |      |
+|      |                                                              |            |      |      |
+|      |                                                              |            |      |      |
+|      |                                                              |            |      |      |
+
