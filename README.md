@@ -1,11 +1,13 @@
 # LeetCode-2020
 马上进入2020找实习冲刺阶段，我决定以天为单位，记录每天做的LeetCode习题，方便后期整理。
 
+C++文档神器推荐：*cppreference.chm*
+
 ![](./imgs/leetcode-map.jpg)
 
 ### 1 LeetCode刷题记录（每日更新）
 
-📅 更新打卡：[2020 - week3 - 2/21](./src/2020-02/README.md)
+📅 更新打卡：[2020 - week3 - 2/23](./src/2020-02/README.md)
 
 
 
@@ -62,8 +64,8 @@
 - [面试题56 - I. 数组中数字出现的次数](./offer/56-i-数组中数字出现的次数.md) `位运算`
 - [面试题57. 和为s的两个数字](./offer/57-和为s的两个数字.md) `对撞指针`
 - [面试题14- I. 剪绳子](https://leetcode-cn.com/problems/jian-sheng-zi-lcof/) `DP` 🕑
-- [面试题53 - I. 在排序数组中查找数字 I](https://leetcode-cn.com/problems/zai-pai-xu-shu-zu-zhong-cha-zhao-shu-zi-lcof/) `逻辑` 🕑
-- [面试题62. 圆圈中最后剩下的数字](https://leetcode-cn.com/problems/yuan-quan-zhong-zui-hou-sheng-xia-de-shu-zi-lcof/) `约瑟夫环` 🕑
+- [面试题53 - I. 在排序数组中查找数字 I](https://leetcode-cn.com/problems/zai-pai-xu-shu-zu-zhong-cha-zhao-shu-zi-lcof/) `二分` 🕑
+- [面试题62. 圆圈中最后剩下的数字](./offer/62. 圆圈中最后剩下的数字.md) `约瑟夫环`  `贪心`
 
 
 
@@ -276,7 +278,9 @@ DFS解题模板：
 ### 5 题目分门别类（TODO）：
 **算法类**：
 
-- 基础技巧：分治、二分、贪心
+- 分治、二分
+
+  - [面试题53 - I. 在排序数组中查找数字 I](https://leetcode-cn.com/problems/zai-pai-xu-shu-zu-zhong-cha-zhao-shu-zi-lcof/) 
 
 - 排序算法：快速排序、归并排序、计数排序
 
@@ -306,6 +310,10 @@ DFS解题模板：
   - 左移/右移
   - 综合
   
+- 贪心
+
+  - [面试题62. 圆圈中最后剩下的数字](./offer/62. 圆圈中最后剩下的数字.md) 
+
 - 数学/逻辑/规律：
 
   - [794. 有效的井字游戏](https://leetcode-cn.com/problems/valid-tic-tac-toe-state/)
@@ -324,6 +332,17 @@ DFS解题模板：
   - 滑动窗口
     - [面试题57 - II. 和为s的连续正数序列](https://leetcode-cn.com/problems/he-wei-sde-lian-xu-zheng-shu-xu-lie-lcof/)
     - [面试题59 - I. 滑动窗口的最大值（同LeetCode239）](./offer/59-滑动窗口的最大值.md)
+    - [3. 无重复字符的最长子串](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/) 🕑
+    - [30. 串联所有单词的子串](https://leetcode-cn.com/problems/substring-with-concatenation-of-all-words/) 🕑
+    - [76. 最小覆盖子串](https://leetcode-cn.com/problems/minimum-window-substring/) 🕑
+    - [159. 至多包含两个不同字符的最长子串](https://leetcode-cn.com/problems/longest-substring-with-at-most-two-distinct-characters/) 🕑
+    - [209. 长度最小的子数组](https://leetcode-cn.com/problems/minimum-size-subarray-sum/) 🕑
+    - [239. 滑动窗口最大值](https://leetcode-cn.com/problems/sliding-window-maximum/)
+    - [340. 至多包含 K 个不同字符的最长子串](https://leetcode-cn.com/problems/longest-substring-with-at-most-k-distinct-characters/) 🕑
+    - [438. 找到字符串中所有字母异位词](https://leetcode-cn.com/problems/find-all-anagrams-in-a-string/) 🕑
+    - [567. 字符串的排列](https://leetcode-cn.com/problems/permutation-in-string/) 🕑
+    - [632. 最小区间](https://leetcode-cn.com/problems/smallest-range-covering-elements-from-k-lists/) 🕑
+    - [727. 最小窗口子序列](https://leetcode-cn.com/problems/minimum-window-subsequence/) 🕑
 
 - 链表
 
@@ -359,7 +378,20 @@ DFS解题模板：
 
 - 字符串：前缀树（字典树） ／ 后缀树
 
-  
+
+
+
+**系列问题**
+
+- 股票问题：
+  - [121. 买卖股票的最佳时机](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/) 🕑
+  - [122. 买卖股票的最佳时机 II](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/) 🕑
+  - [123. 买卖股票的最佳时机 III](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-iii/submissions/) 🕑
+  - [309. 最佳买卖股票时机含冷冻期](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/submissions/) 🕑
+  - [188. 买卖股票的最佳时机 IV](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-iv/submissions/) 🕑
+  - [714. 买卖股票的最佳时机含手续费](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/submissions/) 🕑
+
+
 
 ## Top题目进度
 
