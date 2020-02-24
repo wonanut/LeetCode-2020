@@ -3,7 +3,6 @@
  * 分析：看M和N的范围，应该是dfs没错吧，可以做一点点小优化：只从墙角出发，能降低遍历的次数
  */
 
-#include "stdafx.h"
 #include <iostream>
 #include <algorithm>
 #include <vector>
@@ -17,7 +16,7 @@ bool check(vector<vector<int>>& map, int row, int col) {
 		int col_ = col + directions[i][1];
 		if (row_ >= 0 && row_ < map.size() && col_ >= 0 && col_ < map[0].size() && map[row_][col_] > 0) counter++;
 	}
-	return counter == 1;
+	return counter <= 1;
 }
 
 int dfs(vector<vector<int>>& map, vector<vector<int>>& visited, int row, int col, int val) {

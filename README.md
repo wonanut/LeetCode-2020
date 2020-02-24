@@ -63,9 +63,9 @@ C++文档神器推荐：*cppreference.chm*
 - [面试题52. 两个链表的第一个公共节点](./offer/52-两个链表的第一个公共节点.md) `快慢指针`
 - [面试题56 - I. 数组中数字出现的次数](./offer/56-i-数组中数字出现的次数.md) `位运算`
 - [面试题57. 和为s的两个数字](./offer/57-和为s的两个数字.md) `对撞指针`
-- [面试题14- I. 剪绳子](https://leetcode-cn.com/problems/jian-sheng-zi-lcof/) `DP` 🕑
+- [面试题14- I. 剪绳子](./offer/14-剪绳子.md) `DP` 
 - [面试题53 - I. 在排序数组中查找数字 I](https://leetcode-cn.com/problems/zai-pai-xu-shu-zu-zhong-cha-zhao-shu-zi-lcof/) `二分` 🕑
-- [面试题62. 圆圈中最后剩下的数字](./offer/62. 圆圈中最后剩下的数字.md) `约瑟夫环`  `贪心`
+- [面试题62. 圆圈中最后剩下的数字](./offer/62-圆圈中最后剩下的数字.md) `约瑟夫环`  `贪心`
 
 
 
