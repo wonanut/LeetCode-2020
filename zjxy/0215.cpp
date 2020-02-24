@@ -1,6 +1,7 @@
 /*
  * 字节校园编程题0217 - naive游戏
- * 模拟
+ * 模拟可能会超时，但这个模拟程序应该是对的
+ * 如果不用模拟，应该是做>和<的括号匹配问题吧。
  */
 
 #include "stdafx.h"
@@ -28,18 +29,15 @@ int main() {
 		border[i].push_back(right);
 	}
 
-	cout << 2 << endl;
 	for (int i = 0; i < q; i++) {
 		vector<char> gameMap(vec);
 		int score = 0;
 		int left = border[i][0];
 		int right = border[i][1];
 		int cur = left;
-		char pre = -1;
-		int direction = 1;		// 1 向右,  -1 向左
+		char pre = -1;						// 记录上一个箭头符号的位置，上一个位置不是箭头符号置为-1
+		int direction = 1;					// 1 向右,  -1 向左
 		while (cur >= left && cur <= right) {
-			for (int j = left; j <= right; j++) cout << gameMap[j] << ", ";
-			cout << endl;
 			if (gameMap[cur] <= '9' && gameMap[cur] >= '1') {
 				score += int(gameMap[cur] - '0');
 				gameMap[cur] -= 1;
