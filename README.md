@@ -328,21 +328,20 @@ DFS解题模板：
 
   - 快慢指针
   - 对撞指针
-    - [面试题57. 和为s的两个数字](https://leetcode-cn.com/problems/he-wei-sde-liang-ge-shu-zi-lcof/)
+    - [面试题57. 和为s的两个数字](https://leetcode-cn.com/problems/he-wei-sde-liang-ge-shu-zi-lcof/) ✅
   - 滑动窗口
-    - [面试题57 - II. 和为s的连续正数序列](https://leetcode-cn.com/problems/he-wei-sde-lian-xu-zheng-shu-xu-lie-lcof/)
-    - [面试题59 - I. 滑动窗口的最大值（同LeetCode239）](./offer/59-滑动窗口的最大值.md)
-    - [3. 无重复字符的最长子串](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/) 🕑
+    - [面试题57 - II. 和为s的连续正数序列](https://leetcode-cn.com/problems/he-wei-sde-lian-xu-zheng-shu-xu-lie-lcof/) ✅
+    - [面试题59 - I. 滑动窗口的最大值（同LeetCode239）](./offer/59-滑动窗口的最大值.md) ✅
+    - [3. 无重复字符的最长子串](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/) ✅
     - [30. 串联所有单词的子串](https://leetcode-cn.com/problems/substring-with-concatenation-of-all-words/) 🕑
     - [76. 最小覆盖子串](https://leetcode-cn.com/problems/minimum-window-substring/) 🕑
     - [159. 至多包含两个不同字符的最长子串](https://leetcode-cn.com/problems/longest-substring-with-at-most-two-distinct-characters/) 🕑
     - [209. 长度最小的子数组](https://leetcode-cn.com/problems/minimum-size-subarray-sum/) 🕑
-    - [239. 滑动窗口最大值](https://leetcode-cn.com/problems/sliding-window-maximum/)
+    - [239. 滑动窗口最大值](https://leetcode-cn.com/problems/sliding-window-maximum/) ✅
     - [340. 至多包含 K 个不同字符的最长子串](https://leetcode-cn.com/problems/longest-substring-with-at-most-k-distinct-characters/) 🕑
-    - [438. 找到字符串中所有字母异位词](https://leetcode-cn.com/problems/find-all-anagrams-in-a-string/) 🕑
+    - [438. 找到字符串中所有字母异位词](./src/2020-02/week3/438-找到字符串中所有字母异位词.md) ✅
     - [567. 字符串的排列](https://leetcode-cn.com/problems/permutation-in-string/) 🕑
     - [632. 最小区间](https://leetcode-cn.com/problems/smallest-range-covering-elements-from-k-lists/) 🕑
-    - [727. 最小窗口子序列](https://leetcode-cn.com/problems/minimum-window-subsequence/) 🕑
 
 - 链表
 

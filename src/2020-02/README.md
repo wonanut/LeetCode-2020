@@ -2,7 +2,7 @@
 
 Howard Wonanut 2020刷题 / 过于简单的题目（没有星星标记）只有到官网链接
 
-##### 😃简单题     🤢只会暴力    😡毫无头绪    ⭐题目难度量化    🆕当前周     🕑待整理       ✅已整理      🆘未解决
+##### 😃简单题     🤢只会暴力    😡毫无头绪    ⭐题目难度量化    💾已整理     🕑待整理       ✅已解决      🆘未解决
 
 *剑指offer系列题目题解均在`Leetcode题解`。
 
@@ -13,8 +13,8 @@ Howard Wonanut 2020刷题 / 过于简单的题目（没有星星标记）只有�
 | 日期 | 数目 | 日期 | 数目 | 日期 | 数目 | 日期 | 数目 | 日期  | 数目 |
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----- | ---- |
 | 2/1  | 0    | 2/8  | 3    | 2/15 | 0    | 2/22 | 6    | 2/29  | -    |
-| 2/2  | 0    | 2/9  | 0    | 2/16 | 8    | 2/23 | 5    | total | 67   |
-| 2/3  | 7    | 2/10 | 0    | 2/17 | 4    | 2/24 | -    |       |      |
+| 2/2  | 0    | 2/9  | 0    | 2/16 | 8    | 2/23 | 5    | total | 76   |
+| 2/3  | 7    | 2/10 | 0    | 2/17 | 4    | 2/24 | 9    |       |      |
 | 2/4  | 2    | 2/11 | 0    | 2/18 | 3    | 2/25 | -    |       |      |
 | 2/5  | 0    | 2/12 | 0    | 2/19 | 13   | 2/26 | -    |       |      |
 | 2/6  | 1    | 2/13 | 0    | 2/20 | 8    | 2/27 | -    |       |      |
@@ -38,7 +38,7 @@ Howard Wonanut 2020刷题 / 过于简单的题目（没有星星标记）只有�
 
 
 
-### week1 2/3 🆕
+### week1 2/3
 
 【1】[384 shuffle-an-array](./week1/384-shuffle-an-array.py) `洗牌算法` `中等` ⭐⭐⭐  😃
 
@@ -123,7 +123,7 @@ s.count('a')
 
 
 
-### week1 2/4 🆕
+### week1 2/4
 
 【8】[264-ugly-number-ii](./week1/264-ugly-number-ii.py) `DP` `中等` 🆘
 
@@ -133,7 +133,7 @@ s.count('a')
 
 
 
-### week1 2/6 🆕
+### week1 2/6
 
 【10】[947-most-stones-removed-with-same-row-or-column](./week1/947-most-stones-removed-with-same-row-or-column.py) `DP` `中等`
 
@@ -141,7 +141,7 @@ s.count('a')
 
 
 
-### week1 2/8 🆕
+### week1 2/8
 
 【12】[1048-longest-string-chain](./week1/1048-longest-string-chain.py) `DP` `中等` ⭐⭐⭐ 🕑
 
@@ -168,7 +168,7 @@ print "Value : %s" %  dict.get('Sex', "Never")
 
 
 
-### week2 2/16 🆕
+### week2 2/16
 
 【16】[面试题03. 数组中重复的数字]() `剑指offer` ⭐⭐ 🕑
 
@@ -251,7 +251,7 @@ python中使用int最大值：
 sys.maxint
 ```
 
-【33】[3. 无重复字符的最长子串](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/) 🆘
+~~【33】[3. 无重复字符的最长子串](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/)~~ 🆘
 
 ~~【34】[438. 找到字符串中所有字母异位词](https://leetcode-cn.com/problems/find-all-anagrams-in-a-string/) 🆘~~
 
@@ -261,7 +261,7 @@ sys.maxint
 
 ### week3 2/19 🆕二叉树刷分日
 
-【36】[239. 滑动窗口最大值](https://leetcode-cn.com/problems/sliding-window-maximum/) `困难` `滑动窗口`⭐⭐⭐⭐⭐
+【36】[239. 滑动窗口最大值](../../offer/59-滑动窗口的最大值.md) `困难` `滑动窗口`⭐⭐⭐⭐⭐ 💾
 
 【37】[102. 二叉树的层序遍历](https://leetcode-cn.com/problems/binary-tree-level-order-traversal/) `队列`⭐⭐
 
@@ -308,7 +308,7 @@ arr.sort(key = lambda x: (x[1], x[2], x3]))
 
 【53】[794. 有效的井字游戏](https://leetcode-cn.com/problems/valid-tic-tac-toe-state/) `逻辑`⭐⭐⭐⭐
 
-【54】[面试题60. n个骰子的点数](./offer/60-n个色子的点数.md) `DP`⭐⭐⭐⭐
+【54】[面试题60. n个骰子的点数](./offer/60-n个色子的点数.md) `DP`⭐⭐⭐⭐ 💾
 
 【55】[面试题13. 机器人的运动范围](https://leetcode-cn.com/problems/ji-qi-ren-de-yun-dong-fan-wei-lcof/) `DFS`⭐
 
@@ -320,19 +320,19 @@ arr.sort(key = lambda x: (x[1], x[2], x3]))
 
 ### week3 2/21 🆕
 
-【58】[面试题14- I. 剪绳子](https://leetcode-cn.com/problems/jian-sheng-zi-lcof/) `DP`⭐⭐⭐
+【58】[面试题14- I. 剪绳子](https://leetcode-cn.com/problems/jian-sheng-zi-lcof/) `DP`⭐⭐⭐ 💾
 
-【59】[面试题52. 两个链表的第一个公共节点](https://leetcode-cn.com/problems/liang-ge-lian-biao-de-di-yi-ge-gong-gong-jie-dian-lcof/) `链表` `快慢指针`⭐⭐
+【59】[面试题52. 两个链表的第一个公共节点](https://leetcode-cn.com/problems/liang-ge-lian-biao-de-di-yi-ge-gong-gong-jie-dian-lcof/) `链表` `快慢指针`⭐⭐ 💾
 
 【60】[面试题55 - II. 平衡二叉树](https://leetcode-cn.com/problems/ping-heng-er-cha-shu-lcof/) `递归`⭐
 
 【61】[面试题57 - II. 和为s的连续正数序列](https://leetcode-cn.com/problems/he-wei-sde-lian-xu-zheng-shu-xu-lie-lcof/) `滑动窗口`⭐
 
-【62】[面试题59 - II. 队列的最大值](https://leetcode-cn.com/problems/dui-lie-de-zui-da-zhi-lcof/) `滑动窗口` ⭐⭐
+【62】[面试题59 - II. 队列的最大值](https://leetcode-cn.com/problems/dui-lie-de-zui-da-zhi-lcof/) `滑动窗口` ⭐⭐ 💾
 
-【63】[面试题57. 和为s的两个数字](https://leetcode-cn.com/problems/he-wei-sde-liang-ge-shu-zi-lcof/) `对撞指针`⭐
+【63】[面试题57. 和为s的两个数字](https://leetcode-cn.com/problems/he-wei-sde-liang-ge-shu-zi-lcof/) `对撞指针`⭐ 💾
 
-【64】[面试题56 - I. 数组中数字出现的次数](https://leetcode-cn.com/problems/shu-zu-zhong-shu-zi-chu-xian-de-ci-shu-lcof/) `位运算-异或`⭐⭐⭐⭐
+【64】[面试题56 - I. 数组中数字出现的次数](https://leetcode-cn.com/problems/shu-zu-zhong-shu-zi-chu-xian-de-ci-shu-lcof/) `位运算-异或`⭐⭐⭐⭐ 💾
 
 
 
@@ -352,7 +352,7 @@ arr.sort(key = lambda x: (x[1], x[2], x3]))
 | 65     | [114. 二叉树展开为链表](https://leetcode-cn.com/problems/flatten-binary-tree-to-linked-list/) | `递归` | ⭐⭐⭐⭐⭐ | 失败 |
 | 66     | [129. 求根到叶子节点数字之和](https://leetcode-cn.com/problems/sum-root-to-leaf-numbers/) | `递归` | ⭐⭐    | 成功 |
 | ~~67~~ | ~~[字节校园学习挑战赛0221](https://github.com/wonanut/LeetCode-2020/blob/master/zjxy/0221.cpp)~~ | `DP`   | ⭐⭐⭐   | 失败 |
-| 68     | [55. 跳跃游戏](https://leetcode-cn.com/problems/jump-game/solution/55-by-ikaruga/) | `贪心` | ⭐⭐⭐   | 失败 |
+| 68     | [55. 跳跃游戏](https://leetcode-cn.com/problems/jump-game/solution/55-by-ikaruga/) 💾 | `贪心` | ⭐⭐⭐   | 失败 |
 | 69     | [34. 在排序数组中查找元素的第一个和最后一个位置](https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array/) | `二分` | ⭐⭐    | 成功 |
 | 70     | [面试题53 - I. 在排序数组中查找数字 I](https://leetcode-cn.com/problems/zai-pai-xu-shu-zu-zhong-cha-zhao-shu-zi-lcof/) | `二分` | ⭐⭐    | 成功 |
 | 71     | [面试题61. 扑克牌中的顺子](https://leetcode-cn.com/problems/bu-ke-pai-zhong-de-shun-zi-lcof/) | `逻辑` | ⭐⭐    | 失败 |
@@ -368,7 +368,7 @@ arr.sort(key = lambda x: (x[1], x[2], x3]))
 
 | 编号   | 题目                                                         | 标签       | 星标    | 挑战 |
 | ------ | ------------------------------------------------------------ | ---------- | ------- | ---- |
-| 72     | [面试题62. 圆圈中最后剩下的数字](https://leetcode-cn.com/problems/yuan-quan-zhong-zui-hou-sheng-xia-de-shu-zi-lcof/) ✅ | `约瑟夫环` | ⭐⭐⭐⭐    | 成功 |
+| 72     | [面试题62. 圆圈中最后剩下的数字](https://leetcode-cn.com/problems/yuan-quan-zhong-zui-hou-sheng-xia-de-shu-zi-lcof/) ✅ 💾 | `约瑟夫环` | ⭐⭐⭐⭐    | 成功 |
 | ~~73~~ | ~~[31. 下一个排列](https://leetcode-cn.com/problems/next-permutation/)~~ |            |         |      |
 | ~~74~~ | ~~[889. 根据前序和后序遍历构造二叉树](https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-postorder-traversal/)~~ |            | ~~⭐⭐⭐~~ |      |
 | ~~75~~ | ~~[5342. 最多可以参加的会议数目](https://leetcode-cn.com/contest/weekly-contest-176/problems/maximum-number-of-events-that-can-be-attended/)~~ |            |         |      |
@@ -385,16 +385,45 @@ arr.sort(key = lambda x: (x[1], x[2], x3]))
 `今日总结`
 
 1. 大部分题目能做出来，但是不能在30分钟内完成，需要加强。
+2. 双指针问题需要总结加强训练，面试题31是之前做过的，仍然做不好。
+
+| 编号 | 题目                                                         | 标签        | 星标  | 挑战 |
+| ---- | ------------------------------------------------------------ | ----------- | ----- | ---- |
+| 81   | [字节校园学习挑战赛0217 ](https://github.com/wonanut/LeetCode-2020/blob/master/zjxy/0217.cpp)✅ | `DFS`       | ⭐⭐    | 成功 |
+| 82   | [字节校园学习挑战赛0215 ](https://github.com/wonanut/LeetCode-2020/blob/master/zjxy/0215.cpp)✅ | `模拟`      | ⭐⭐⭐   | 失败 |
+| 83   | [31. 下一个排列](https://leetcode-cn.com/problems/next-permutation/) |             |       |      |
+| 84   | [889. 根据前序和后序遍历构造二叉树](https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-postorder-traversal/) |             |       |      |
+| 85   | [438. 找到字符串中所有字母异位词](./week3/438-找到字符串中所有字母异位词.md) ✅ 💾 | `滑动窗口`  | ⭐⭐⭐⭐⭐ | 失败 |
+| 86   | [5342. 最多可以参加的会议数目](https://leetcode-cn.com/contest/weekly-contest-176/problems/maximum-number-of-events-that-can-be-attended/) | `贪心`      |       |      |
+| 87   | [343. 整数拆分](https://leetcode-cn.com/problems/integer-break/) ✅ | `DP` `数学` | ⭐⭐⭐   | --   |
+| 88   | [面试题15. 二进制中1的个数 ](https://leetcode-cn.com/problems/er-jin-zhi-zhong-1de-ge-shu-lcof/)✅ | `位运算`    | ⭐     | 成功 |
+| 89   | [面试题18. 删除链表的节点 ](https://leetcode-cn.com/problems/shan-chu-lian-biao-de-jie-dian-lcof/)✅ | `链表`      | ⭐     | 成功 |
+| 90   | [面试题22. 链表中倒数第k个节点 ](https://leetcode-cn.com/problems/lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof/)✅ | `链表`      | ⭐     | 成功 |
+| 91   | [面试题32 - I. 从上到下打印二叉树 ](https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-lcof/)✅ | `二叉树`    | ⭐     | 成功 |
+| 92   | [面试题31. 栈的压入、弹出序列](https://leetcode-cn.com/problems/zhan-de-ya-ru-dan-chu-xu-lie-lcof/) ✅🕑 | `栈`        | ⭐⭐    | 失败 |
+
+
+
+### week3 2/25 🆕
+
+`今日总结`
+
+1. 每日一套模拟题，可以更有效的检测自己的水平，今天做的头条的一套面试题，感觉自己有点菜。
+2. 链表的题目写的不咋样啊，思路混乱。
 
 | 编号 | 题目                                                         | 标签       | 星标  | 挑战 |
 | ---- | ------------------------------------------------------------ | ---------- | ----- | ---- |
-| 81   | [字节校园学习挑战赛0217](https://github.com/wonanut/LeetCode-2020/blob/master/zjxy/0217.cpp)✅ | `DFS`      | ⭐⭐    | 成功 |
-| 82   | [字节校园学习挑战赛0215](https://github.com/wonanut/LeetCode-2020/blob/master/zjxy/0215.cpp)✅ | `模拟`     | ⭐⭐⭐   | 失败 |
-| 83   | [31. 下一个排列](https://leetcode-cn.com/problems/next-permutation/) |            |       |      |
-| 84   | [889. 根据前序和后序遍历构造二叉树](https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-postorder-traversal/) |            |       |      |
-| 85   | [438. 找到字符串中所有字母异位词](./week3/438-找到字符串中所有字母异位词.md) | `滑动窗口` | ⭐⭐⭐⭐⭐ |      |
-| 86   | [5342. 最多可以参加的会议数目](https://leetcode-cn.com/contest/weekly-contest-176/problems/maximum-number-of-events-that-can-be-attended/) |            |       |      |
+| 93   | [3. 无重复字符的最长子串](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/) ✅ | `滑动窗口` | ⭐⭐    | 成功 |
+| 94   | [头条面试题](../../exams/头条套题1.md)                       | `套题`     | ⭐⭐⭐⭐⭐ | 失败 |
+| 95   | [42. 接雨水](https://leetcode-cn.com/problems/trapping-rain-water/) `hard` | `双指针`   | ⭐⭐⭐⭐⭐ | --   |
+| 96   | [2. 两数相加](https://leetcode-cn.com/problems/add-two-numbers/) ✅ | `链表`     | ⭐⭐⭐   | 成功 |
+| 97   | [632. 最小区间](https://leetcode-cn.com/problems/smallest-range-covering-elements-from-k-lists/) `hard` | `双指针`   | 🌚🌚🌚🌚🌚 | 失败 |
 |      |                                                              |            |       |      |
 |      |                                                              |            |       |      |
 |      |                                                              |            |       |      |
-
+|      |                                                              |            |       |      |
+|      |                                                              |            |       |      |
+|      |                                                              |            |       |      |
+|      |                                                              |            |       |      |
+|      |                                                              |            |       |      |
+|      |                                                              |            |       |      |
