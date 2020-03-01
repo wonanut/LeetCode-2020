@@ -66,6 +66,7 @@ C++文档神器推荐：*cppreference.chm*
 - [面试题14- I. 剪绳子](./offer/14-剪绳子.md) `DP` 
 - [面试题53 - I. 在排序数组中查找数字 I](https://leetcode-cn.com/problems/zai-pai-xu-shu-zu-zhong-cha-zhao-shu-zi-lcof/) `二分` 🕑
 - [面试题62. 圆圈中最后剩下的数字](./offer/62-圆圈中最后剩下的数字.md) `约瑟夫环`  `贪心`
+- [面试题53 - II. 0～n-1中缺失的数字](https://leetcode-cn.com/problems/que-shi-de-shu-zi-lcof/) `二分` 🕑
 
 
 
@@ -181,6 +182,8 @@ def preOrder(root):
 ```
 
 中序遍历的非递归写法：
+
+***中序遍历递归写法将左右子节点递归的顺序反过来就能得到逆序。**
 
 ```python
 def inOrder(root):
