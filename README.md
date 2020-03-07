@@ -141,6 +141,8 @@ num = num & (num - 1)
 
 层序遍历：
 
+`python`
+
 ```python
 def levelOrder(root):
         if not root:
@@ -162,7 +164,36 @@ def levelOrder(root):
         return ans
 ```
 
+`cpp`
+
+```cpp
+vector<vector<int>> levelOrder(TreeNode* root) {
+    vector<vector<int>> ret;
+    if (root == NULL) return ret;
+
+    queue<TreeNode*> que;
+    que.push(root);
+    while (!que.empty()) {
+        int counter = que.size();
+        vector<int> cur_row;
+        while (counter--) {
+            TreeNode* cur = que.front();
+            que.pop();
+            cur_row.push_back(cur->val);
+            if (cur->left) que.push(cur->left);
+            if (cur->right) que.push(cur->right);
+        }
+        ret.push_back(cur_row);
+    }
+    return ret;
+}
+```
+
+
+
 前序遍历非递归写法：
+
+`python`
 
 ```python
 def preOrder(root):
@@ -181,9 +212,33 @@ def preOrder(root):
     return ans
 ```
 
+`Cpp`
+
+```cpp
+vector<int> preorderTraversal(TreeNode* root) {
+    vector<int> ret;
+    if (root == NULL) return ret;
+
+    stack<TreeNode*> st;
+    st.push(root);
+    while (!st.empty()) {
+        TreeNode* cur = st.top();
+        st.pop();
+        ret.push_back(cur->val);
+        if (cur->right) st.push(cur->right);
+        if (cur->left) st.push(cur->left);
+    }
+    return ret;
+}
+```
+
+
+
 中序遍历的非递归写法：
 
 ***中序遍历递归写法将左右子节点递归的顺序反过来就能得到逆序。**
+
+`python`
 
 ```python
 def inOrder(root):
@@ -201,7 +256,34 @@ def inOrder(root):
 	return ans
 ```
 
+`cpp`
+
+```cpp
+vector<int> inorderTraversal(TreeNode* root) {
+    vector<int> ret;
+    stack<TreeNode*> st;
+    TreeNode* cur = root;
+    while (cur || !st.empty()) {
+        if (cur) {
+            st.push(cur);
+            cur = cur->left;
+        }
+        else {
+            cur = st.top();
+            st.pop();
+            ret.push_back(cur->val);
+            cur = cur->right;
+        }
+    }
+    return ret;
+}
+```
+
+
+
 后序遍历的非递归写法：
+
+`python`
 
 ```python
 # 从根节点开始依次迭代，弹出栈顶元素输出到输出列表中，然后依次压入它的所有孩子节点，按照从上到下、从左至右的顺序依次压入栈中。因为深度优先搜索后序遍历的顺序是从下到上、从左至右，所以需要将输出列表逆序输出。
@@ -219,6 +301,28 @@ def postOrder(root):
         if cur.right:
             stack.append(cur.right)
     return ans[::-1]
+```
+
+`cpp`
+
+```cpp
+vector<int> postorderTraversal(TreeNode* root) {
+    vector<int> ret;
+    if (root == NULL) return ret;
+
+    stack<TreeNode*> st;
+    st.push(root);
+    while (!st.empty()) {
+        TreeNode* cur = st.top();
+        st.pop();
+        ret.push_back(cur->val);
+        if (cur->left) st.push(cur->left);
+        if (cur->right) st.push(cur->right);
+    }
+
+    reverse(ret.begin(), ret.end());
+    return ret;
+}
 ```
 
 
