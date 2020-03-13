@@ -7,7 +7,7 @@ C++文档神器推荐：*cppreference.chm*
 
 ### 1 LeetCode刷题记录（每日更新）
 
-📅 更新打卡：[2020 - week3 - 2/23](./src/2020-02/README.md)
+📅 更新打卡：[2020 - week2 - 3/13](./src/2020-03/README.md)
 
 
 
@@ -329,39 +329,132 @@ vector<int> postorderTraversal(TreeNode* root) {
 
 #### 4.4 排序算法
 
+![十大经典排序算法 概览截图](C:/研究生/学习笔记/Algorithms_JOBS/算法/排序算法专题/imgs/sort.png)
+
+[图片来源]: https://github.com/wonanut/JS-Sorting-Algorithm
+
+
+
 冒泡排序：
 
-```python
-def bubbleSort(arr):
-	pass
+```cpp
+void bubbleSort(vector<int>& vec) {
+    int n = vec.size();
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n - i - 1; j++) {
+            if (vec[j + 1] < vec[j]) swap(vec[j + 1], vec[j]);
+        }
+    }
+}
 ```
 
 插入排序：
 
-```python
-def insertSort(arr):
-	pass
+```cpp
+void insertSort(vector<int>& vec) {
+	for (int i = 1; i < vec.size(); i++) {
+		int cur = vec[i];
+		for (int j = i - 1; j >= 0; j--) {
+			if (vec[j] > vec[j + 1]) 
+                swap(vec[j + 1], vec[j]);
+			else break;
+		}
+	}
+}
 ```
 
 选择排序：
 
-```python
-def selectSort(arr):
-	pass
+```cpp
+void selectSort(vector<int>& vec) {
+	for (int i = 0; i < vec.size(); i++) {
+		int temp_min = vec[i], temp_min_idx = i;
+		for (int j = i + 1; j < vec.size(); j++) {
+			if (vec[j] < temp_min) {
+				temp_min = vec[j];
+				temp_min_idx = j;
+			}
+		}
+		swap(vec[i], vec[temp_min_idx]);
+	}
+}
 ```
 
 快速排序：
 
-```python
-def quickSort(arr):
-	pass
+```cpp
+// 版本1：快慢指针，从左往右遍历
+void quick_sort1(vector<int>& vec, int left, int right) {
+	if (left >= right) return;
+	
+	int ptr = left, pivot = vec[ptr];
+	for (int i = left + 1; i <= right; i++) {
+		if (vec[i] < pivot) {
+			ptr ++;
+			swap(vec[ptr], vec[i]);
+		}
+	}
+	swap(vec[left], vec[ptr]);
+
+	quick_sort1(vec, left, ptr - 1);
+	quick_sort1(vec, ptr + 1, right);
+
+}
+
+// 版本2：前后指针，最经典的方法
+void quick_sort2(vector<int>& vec, int left, int right) {
+	if (left >= right) return;
+
+	int pivot = vec[left];
+	int l = left, r = right;
+	while (left < right) {
+		while (left < right && vec[right] >= pivot) right --;
+		while (left < right && vec[left] <= pivot) left ++;
+		swap(vec[left], vec[right]);
+	}
+	swap(vec[left], vec[l]);
+
+	quick_sort2(vec, l, left - 1);
+	quick_sort2(vec, left + 1, r);
+}
+
+void quickSort(vector<int>& vec) {
+	quick_sort2(vec, 0, vec.size() - 1);
+}
 ```
 
 归并排序：
 
-```python
-def mergeSort(arr):
-	pass
+```cpp
+void merge_sort(vector<int>& vec, int left, int right) {
+	if (right <= left) return;
+
+	int mid = left + (right - left) / 2;
+	merge_sort(vec, left, mid);
+	merge_sort(vec, mid + 1, right);
+
+	int ptr1 = left, ptr2 = mid + 1;
+	vector<int> temp;
+	while (ptr1 <= mid && ptr2 <= right) {
+		if (vec[ptr1] <= vec[ptr2]) {
+			temp.push_back(vec[ptr1]);
+			ptr1 ++;
+		}
+		else {
+			temp.push_back(vec[ptr2]);
+			ptr2 ++;
+		}
+	}
+	while (ptr1 <= mid) temp.push_back(vec[ptr1++]);
+	while (ptr2 <= right) temp.push_back(vec[ptr2++]);
+	for (int i = 0; i < temp.size(); i++) {
+		vec[left + i] = temp[i];
+	}
+}
+
+void mergeSort(vector<int>& vec) {
+	merge_sort(vec, 0, vec.size() - 1);
+}
 ```
 
 
@@ -378,6 +471,99 @@ DFS解题模板：
 
 ```python
 
+```
+
+
+
+#### 4.6 最小公倍数&最大公约数
+
+最小公倍数辗转相除法：
+
+```cpp
+int gcd(int a, int b) {
+	if (a < b) { a = a ^ b; b = a ^ b; a = a ^ b; }
+    return b == 0 ? a : gcd(b, a % b);
+}
+```
+
+最大公约数求法：
+
+```cpp
+int lcm(int a, int b) {
+    return a * b / gcd(a, b);
+}
+```
+
+
+
+#### 4.7 前缀树
+
+前缀树在字符串查找、输入框自动补全等应用场所常常使用。
+
+```cpp
+class Trie {
+private:
+    // 定义前缀树结构体，有两个成员变量
+    // isEnd：表示是否存在从根节点到当前节点的字符串
+    // children：表示当前节点的26个子节点
+    struct TrieNode {
+        TrieNode() : isEnd(false), children(26, nullptr) {}
+        ~TrieNode() {
+            for (auto child : children) 
+                if (child) delete child;
+        }
+
+        bool isEnd;
+        vector<TrieNode*> children;
+    };
+
+    // 定义根节点
+    TrieNode *root;
+    
+public:
+    /** Initialize your data structure here. */
+    Trie() : root(new TrieNode()) {}
+    
+    /** Inserts a word into the trie. */
+    void insert(string word) {
+        TrieNode* cur = root;
+        for (auto ch : word) {
+            if (cur->children[ch - 'a'] == nullptr) {
+                cur->children[ch - 'a'] = new TrieNode();
+            }
+            cur = cur->children[ch - 'a'];
+        }
+        cur->isEnd = true;
+    }
+    
+    /** Returns if the word is in the trie. */
+    bool search(string word) {
+        TrieNode* cur = root;
+        for (auto ch : word) {
+            if (cur->children[ch - 'a'] == nullptr) return false;
+            cur = cur->children[ch - 'a'];
+        }
+        return cur->isEnd;
+    }
+    
+    /** Returns if there is any word in the trie that starts with the given prefix. */
+    bool startsWith(string prefix) {
+        TrieNode* cur = root;
+        for (auto ch : prefix) {
+            if (cur->children[ch - 'a'] == nullptr) return false;
+            cur = cur->children[ch - 'a'];
+        }
+        return true;
+    }
+};
+
+/**
+ * Your Trie object will be instantiated and called as such:
+ * Trie* obj = new Trie();
+ * obj->insert(word);
+ * bool param_2 = obj->search(word);
+ * bool param_3 = obj->startsWith(prefix);
+ */
 ```
 
 
@@ -426,6 +612,7 @@ DFS解题模板：
   - [794. 有效的井字游戏](https://leetcode-cn.com/problems/valid-tic-tac-toe-state/)
   - [面试题61. 扑克牌中的顺子](https://leetcode-cn.com/problems/bu-ke-pai-zhong-de-shun-zi-lcof/)
   - [面试题62. 圆圈中最后剩下的数字](https://leetcode-cn.com/problems/yuan-quan-zhong-zui-hou-sheng-xia-de-shu-zi-lcof/)
+  - [1071. 字符串的最大公因子](https://leetcode-cn.com/problems/greatest-common-divisor-of-strings/) `GCD`
   
   
 
@@ -449,19 +636,14 @@ DFS解题模板：
     - [438. 找到字符串中所有字母异位词](./src/2020-02/week3/438-找到字符串中所有字母异位词.md) ✅
     - [567. 字符串的排列](https://leetcode-cn.com/problems/permutation-in-string/) 🕑
     - [632. 最小区间](https://leetcode-cn.com/problems/smallest-range-covering-elements-from-k-lists/) 🕑
-
 - 链表
 
   - 链表反转
-
 - 栈与队列
-
 - 哈希表
-
 - 堆：最大堆 ／ 最小堆
 
   - 优先队列
-
 - 二叉树 
 
   - 递归
@@ -475,14 +657,13 @@ DFS解题模板：
       - [897. 递增顺序查找树](https://leetcode-cn.com/problems/increasing-order-search-tree/) 
     - 二叉树的后序遍历：[145. 二叉树的后序遍历](https://leetcode-cn.com/problems/binary-tree-postorder-traversal/)
     - 二叉树的垂序遍历：[987. 二叉树的垂序遍历](https://leetcode-cn.com/problems/vertical-order-traversal-of-a-binary-tree/)
-
 - 图：最近公共祖先、并查集
 
   - DFS
   - BFS
   - 并查集
-
 - 字符串：前缀树（字典树） ／ 后缀树
+  - 前缀树：[208. 实现 Trie (前缀树)](https://leetcode-cn.com/problems/implement-trie-prefix-tree/)
 
 
 
